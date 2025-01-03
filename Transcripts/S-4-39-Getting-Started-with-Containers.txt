@@ -1,0 +1,103 @@
+Welcome back.
+
+In the last step, we started with the first Platform as a Service offering in Azure, which is Azure
+
+App Service. There are a number of other Platform as a Service offerings in Azure around containers.
+
+Before we get to them,
+
+let's try and understand what is a container and why do we need them.
+
+One of the most popular architectural styles today is Microservices.
+
+All enterprises are heading toward microservices architectures.
+
+We are building small focused microservices. Instead of building a large monolithic application,
+
+we are building them as a set of small focused microservices.
+
+The advantage of going for microservices is the flexibility to innovate.
+
+You can build applications in different programming languages.
+
+You can build movie service in Go, customer service in Java, review service in Python, and maybe these
+
+two in JavaScript.
+
+Obviously, you don't want a lot of languages to be used in a single enterprise, but you always want
+
+the flexibility.
+
+You want the flexibility to choose a different language if a need arises for a specific microservice.
+
+But as you start building a number of small applications, the deployment for them become complex.
+
+If you have different ways of deploying Go applications, Java applications, Python applications, and
+
+JavaScript applications, your operations team will have a big headache.
+
+How do we have one way of deploying Go, Java, Python, or JavaScript microservices? That's where containers
+
+play a crucial role.
+
+How do containers help? We'd create a Docker image for each microservice. Whatever the microservice
+
+needs to run, it's all present inside a Docker image. Your application runtime, if it's a Java application,
+
+then JDK is part of your Docker image.
+
+If it's a Python application, Python is part of the Docker image.
+
+It also has the application code and the dependencies.
+
+If it's a Java application you have a jar.
+
+If you have a Node.js application, you have the package.
+
+So, you have that also available as part of your Docker image.
+
+If you look at it from 10,000 feet, virtual machines help you to virtualize hardware.
+
+You have a hardware which might be single host and you can deploy n number of virtual machines to
+
+them.
+
+So, your virtual machines virtualize the hardware.
+
+The containers, on the other hand, virtualize software. Once you have a Docker Engine installed,
+
+you can run any number of containers on the same host operating system.
+
+So, for me, containers virtualize the operating system.
+
+Once you have a Docker image, you can run it as a container, the same way on any infrastructure.
+
+You can run it on your local machine.
+
+You can run it on.
+
+You can run it in your corporate data center, and you can run it in the cloud.
+
+What are the advantages of going for Docker? Docker
+
+containers are lightweight.
+
+Virtual machines have something called a Guest OS.
+
+However, Docker containers don't need a Guest OS, so they are lightweight.
+
+Docker also provides isolation for containers.
+
+Whatever this container might do will not affect the other containers which are present in here
+
+and Docker is cloud-neutral.
+
+You can run your Docker images on AWS, Azure, or Google Cloud, or any other cloud platform you'd want to make use of.
+
+In this step,
+
+we got a quick introduction to containers. Starting next step,
+
+let's look at some of the important services in Azure related to containers.
+
+I'll see you in the next step.

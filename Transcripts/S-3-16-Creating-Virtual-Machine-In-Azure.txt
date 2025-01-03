@@ -1,0 +1,223 @@
+Are you excited to create your first resource in the cloud?
+
+Let's get started!
+
+Earlier we have created our Azure account.
+
+If you go to Portal.azure.com, you would be able to enter your user ID and the password and you can say sign in.
+
+When you enter the credentials on Portal.azure.com, you'll be taken to the Quick Start center.
+
+This is where you can quickly get started with Azure.
+
+Let's not really worry about this right now.
+
+I'll click the close button which is present in here to close this.
+
+And this would take us to the home page of the Azure Portal.
+
+Azure portal is a web application which allows you to manage your Azure resources.
+
+There are a wide variety of services that Azure offers.
+
+If you click the hamburger icon which is present in here, over here you can go into all services and you can see that there are a wide variety of services that are offered by Azure in different categories.
+
+So there are services related to AI, analytics, compute, containers, databases and a wide variety of other services.
+
+For now, our focus is to create a virtual machine.
+
+So let's get started with typing virtual machine.
+
+So v I r t u a l m a s m a c h I n e.
+
+If I type that in, you should see virtual machines in the services.
+
+So let's go over to virtual machines.
+
+This is the page where you can create your virtual machine.
+
+All that I need to do is to say create and choose Azure Virtual Machine.
+
+Let's choose that.
+
+You'd see that this is a very, very, very complex page.
+
+Azure provides you with a variety of options.
+
+When you create your virtual machine, you can choose your operating system, you can choose the size of the virtual machine. And you can also configure a lot of things related to the security of your virtual machine.
+
+Let's not worry about all of them right now.
+
+Let's focus on the important ones.
+
+The first thing that we will focus on is the resource group.
+
+In Azure project.
+
+You might be creating a number of resources.
+
+You might be creating a virtual machine.
+
+You might be creating a database.
+
+You might be creating a queue.
+
+A resource group provides a way to group resources in Azure.
+
+Let's say I have a project and there are ten resources that are related to that specific project.
+
+I can create a resource group and put all these ten resources in one group.
+
+What I'll do now is to create a new resource group.
+
+So I'll say create new and I'll call this compute hyphen r g r g is the abbreviation for resource group.
+
+So compute hyphen RG is the name I'm giving to resource group.
+
+A resource group is a container that holds related resources for an Azure solution.
+
+Let's go ahead and say okay.
+
+The next thing we would want to focus on is giving the virtual machine a name.
+
+This is your first virtual machine.
+
+So I'll call this my first VM.
+
+VM here stands for Virtual Machine.
+
+The next important choice that is present in here is region.
+
+Choose the Azure region that's right for you and your customers.
+
+One of the biggest flexibilities that Cloud and Azure provides you with is the fact that you can deploy your resources to multiple regions around the world.
+
+I'm in India right now.
+
+I'll be able to quickly deploy a resource to us or Australia or Europe, or anywhere around the world by deploying these resources to different regions that are provided by Azure.
+
+The default region which is chosen in here for me is East US.
+
+I will leave the region as east far enough, and I'll move on to the other options for all the rest of the options.
+
+Let's choose the defaults and scroll down to image.
+
+Image basically decides what operating system you would want on your virtual machine.
+
+It might be Windows or Mac or Linux.
+
+That's what a image helps you to choose what operating system and software you would want installed on your virtual machine.
+
+What I would do is to choose the default, which is present in here, which is Ubuntu Server I will choose the defaults for the rest of the things, and next we would move on to this size.
+
+Size determines what is the hardware you would want on your virtual machine.
+
+How much processing power do you need?
+
+How much memory do you need?
+
+How much storage capacity do you need?
+
+All these are decided by size.
+
+Azure offers a wide variety of sizes to support different types of users.
+
+You can see that the default option which is chosen in here is standard underscore B1S, and you can also see that it's free services eligible.
+
+However, there is a problem.
+
+It says this size is currently unavailable in yeast US for this subscription.
+
+So what it's saying is in the specific region that we choose, what is the region that we choose?
+
+We choose East us.
+
+In this specific region, this specific size is not currently available.
+
+So one of the options that we have is to change the region.
+
+So I'll go ahead and say instead of us east us, I want to go with West US three.
+
+Now if I go to West US three and scroll down, you would see that this size is also not available in west US three right now.
+
+So let's go ahead and choose a different region.
+
+Again, a very, very important thing to remember is that this availability would change with time.
+
+So when you go ahead and choose, you might actually see that in East US you are able to create a virtual machine.
+
+In that case you can go ahead and choose East US itself.
+
+What I'll now do is to go for Australia East.
+
+Let's go and choose Australia East.
+
+Okay.
+
+This is present.
+
+So this is fine as well.
+
+So the thing that you need to focus on is to choose a region where this specific size is available.
+
+After size, I'll take the defaults for the rest of the things as well, and scroll down to select inbound ports Over here, the default inbound port which is selected is SSH port 22.
+
+If you want to connect to the virtual machine which is created, and if you want to execute commands, in that case, you would want to do an SSH into the virtual machine.
+
+Once you SSH into a virtual machine, you'll be able to execute commands.
+
+You'll be able to install software.
+
+You would want to copy files.
+
+All that you can do once you SSH into a virtual machine.
+
+In addition to SSH, I also want to allow HTTP.
+
+So I would want to allow HTTP port 80.
+
+HTTP is used by web applications.
+
+If I'm installing a web application on the virtual machine, and I would want to access it, one of the options that is present is HTTP In the initial stages of the course, we want to keep it really, really simple.
+
+So let's go with HTTP and not really worry about Https for now.
+
+Until now, we have configured some of the important options that allow us to create a virtual machine.
+
+We are now all set to create a virtual machine.
+
+Let's go ahead and say review plus Create.
+
+Once you have configured everything, Azure would run a final validation.
+
+This final validation will take some time, typically about a minute or so.
+
+After about a minute I saw that validation has passed.
+
+That's awesome.
+
+So let's go ahead and say create.
+
+When we create a virtual machine, a SSH key pair is created for us.
+
+A SSH key pair contains a public key and a private key.
+
+And it's very, very important to remember that Azure does not store the private key.
+
+Whatever.
+
+Downloading now is the private key.
+
+This is like a password.
+
+You need the private key to connect to the virtual machine.
+
+So what I recommend you to do is to download the private key and keep it in a safe place.
+
+It's very, very important that you don't share this private key with anybody because anybody with access to this private key will be able to connect to the virtual machine.
+
+Once you have downloaded the private key, you would go on to a screen where you would see deployment is in progress.
+
+The deployment of this Azure resource, which is a virtual machine, will take about a few minutes.
+
+I would recommend you to take a break, grab a coffee and I'll see you on the other side.

@@ -1,0 +1,100 @@
+Transcript
+Welcome back, I'm Ranga Karanam.
+
+I'm all excited to be your instructor for this course. Azure has more than 200 services.
+
+A little later in the course, we will be logging into Azure portal and you'll be able to see all the different
+
+services which are present in Azure.
+
+When I started with Azure a few years back, they were half the number of services you are seeing right
+
+now.
+
+This is an ever-growing list of services.
+
+This specific exam expects you to have knowledge of 40+ services.
+
+This exam tests your decision-making abilities;
+
+which service do you choose in which situation. This course is designed to help you make those choices.
+
+Our goal with this course is not only to help you get certified, but also to help you understand Cloud
+
+computing and understand the various Azure services in depth.
+
+We would want you to be able to take the knowledge you gained in this course and apply it in your real
+
+world projects.
+
+How can you make the best use of this course?
+
+How can you put your best foot forward?
+
+This is a very challenging certification.
+
+This expects you to understand and remember a number of services. Your are human,
+
+I'm human, and as humans, we tend to forget things over time.
+
+If I'm learning something new today, it is highly probable that I'll be forgetting it in a week's time.
+
+How do you ensure that you improve your chances of remembering things?
+
+Here are a couple of recommendations
+
+based on my experience.
+
+Number one is Active Learning -
+
+think and take notes.
+
+Whenever you see something interesting in the course, write it down.
+
+The second recommendation is to review the presentation once in a while; every few days or every week.
+
+Take a step back, review the presentation and videos, and think about what you have learned.
+
+The more you are actively involved with the learning and the more you review, the higher the chances
+
+for you to remember things
+
+for a long time. Now, what is our approach to building a great course?
+
+We are taking a three-pronged approach.
+
+We have amazing video presentations where we would introduce the different Azure services to you.
+
+We also have designed a number of amazing demos where you will be playing with the Azure services.
+
+We also have two different kinds of quizzes to reinforce your learning.
+
+We have the traditional text quizzes where you have questions, multiple choice answers, and you pick
+
+the right answer.
+
+We also have video quizzes where we discuss the scenarios, solutions, and the different variations that
+
+are possible on the solution.
+
+By using this three-pronged approach, we think you'll be able to remember things for a long time and
+
+you'll do really, really well at the exam.
+
+Now, before we move into the next step, there are a couple of recommendations for you.
+
+Number
+
+one, this is not a race.
+
+Take your time, focus on understanding things well, and do not hesitate to replay videos when needed.
+
+The second, but the most important recommendation, is to have fun.
+
+Preparing for certifications can get really boring
+
+and that's why we have invested a lot of time to try and make this course really interactive, really
+
+hands-on, and making sure that you will have a lot of fun while you learn.
+
+I'm really excited to help you get Azure certified and I'll see you in the next step.

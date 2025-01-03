@@ -1,0 +1,279 @@
+Transcript
+In the last few steps, we created a virtual machine and we connected to it.
+
+In this step, let's look at the key concepts that you need to remember with respect to Azure Virtual
+
+Machines.
+
+Let's get started with the most important one, which is the image.
+
+Whenever I'm creating a virtual machine, I need to choose what operating system I would want on this
+
+specific virtual machine.
+
+Should I want Windows 11 or windows 12, or do I want a specific distribution of Linux?
+
+Should I want ubuntu or which distribution of Linux I would want to choose?
+
+This is decided by choosing the image.
+
+A image helps you to choose the right operating system and the software you would want to install on
+
+that specific virtual machine.
+
+So image decides the operating system and software.
+
+The next two things are related to the hardware.
+
+VM family helps you to choose the right family of hardware.
+
+There are different types of applications that you might want to run on the virtual machines.
+
+You might want to run a simple web application.
+
+In that kind of scenario, a general purpose virtual machine is more than sufficient.
+
+However, there might be scenarios where you would want a lot of memory on your virtual machine.
+
+For example, if you want to have a cache when you have a cache, you need to have a lot of memory.
+
+Sometimes you might be having situations where you would need high performance compute, or you might
+
+be running graphic processing applications.
+
+In that kind of scenario, you might need a GPU.
+
+So there are different types of hardware configurations you might want to choose.
+
+When you create a virtual machine, you can choose the right family of hardware by choosing the right
+
+VM family.
+
+And inside the same VM family there are different sizes that are available.
+
+These are called VM sizes.
+
+For example, earlier we choose b1 s along with b1 B1S, you would also have something like B2S, and
+
+so on and so forth.
+
+This allows you to choose this specific quantity of hardware.
+
+I want one CPU and two GB of memory, or I would want two vCPUs and four GB of memory.
+
+This is what VM size helps you to choose.
+
+So image is the operating system and software VM family and VM size helps you to choose the hardware
+
+you would want on the virtual machine.
+
+And the last one is disks.
+
+Whenever you want to store something on your virtual machine, you need to attach a disk with your virtual
+
+machine.
+
+You'd want to store the operating system on the boot disk.
+
+You might want to store some data on a disk and attach it with the virtual machine as well.
+
+This is very, very similar to how we attach hard disks with our computers.
+
+So you want to store things in your virtual machine.
+
+That's where this come into picture.
+
+You can attach virtual disks with your virtual machines.
+
+This is also called block storage.
+
+We will talk about the different types of storage.
+
+And we'll also talk about block storage in depth a little later in the course.
+
+Let's now look at all these in action.
+
+We want to see image VM family, VM size and disks.
+
+If you go back to the Azure portal, what I will do is actually click the hamburger portal and do a
+
+right click on the home.
+
+And I would say Open link in new tab.
+
+So we will use this tab to use the command line.
+
+Let's actually click here.
+
+So this would so the hamburger menu would disappear.
+
+And over here I have the command line.
+
+And in the next step I'll make use of the Azure Portal web application over here.
+
+Let's go over to Virtual Machines.
+
+And I would want to create a new virtual machine.
+
+So when I'm creating a new virtual machine, if you scroll down in here, one of the important choices
+
+that we need to make is image.
+
+As I said earlier, image helps you to choose the base operating system for the virtual machine.
+
+Over here you can see that ubuntu is the default.
+
+If you want, you can also click See all images.
+
+If you click See All images, you would see that there are a wide variety of images which are supported
+
+in here.
+
+Over here you can see ubuntu, Debian.
+
+If you scroll down, you'll also see Red Hat Enterprise Linux and a lot of other distributions of Linux
+
+as well.
+
+And if you want to make use of windows, you can also type in windows.
+
+In here you'd see that there are a lot of windows options which are present in here as well.
+
+So the image helps you to choose what operating system that you would want to make use of to run your
+
+virtual machine.
+
+Let's go back to create a virtual machine.
+
+Once you choose the operating system, that's the image.
+
+The next thing would be to choose the hardware.
+
+That's where the machine family and the size becomes really, really important.
+
+If you click See All Sizes in here, you can see that there are a lot of different sizes which are present
+
+in here.
+
+I'll click this in here.
+
+So I'll minimize this.
+
+And you would see that there are different types of series which are present.
+
+So you have D series, B series E series.
+
+So D b e.
+
+These are all machine families.
+
+You can see that D family is recommended for general purpose workloads.
+
+B series is recommended for workloads that do not need continuous full CPU performance.
+
+You can see that E series is recommended when you need high memory.
+
+You don't really need to remember all the families which are present in here.
+
+All that you need to remember is that whenever you want to create a virtual machine, you would want
+
+to choose the hardware, and the hardware is enabled by choosing the right family and inside the family
+
+you would choose the right VM size.
+
+For example, if I expand B series in here, all these things which you see in here belong to B series.
+
+That's the B family.
+
+And inside that you can see that there is B1SB2, SB2, MSB1LS and a wide variety of other sizes.
+
+Now what is the difference between B-1s and b-2s?
+
+You can see that B-1s has one Vcpu one gig of Ram, and you can have two data disks attached with it.
+
+However, when it comes to B-2s, the hardware configuration is a little different.
+
+It has two vCPUs, it has four gigs of Ram, and it can have up to four data disks that are attached.
+
+So within the B series, B-2s, B-1s, B-2, miss B-1, LZ, and all other sizes have different hardware
+
+configuration as well.
+
+So the first thing that you need to do is to choose the family based on the type of workload that you
+
+would want to run.
+
+The next thing that you would choose is the size.
+
+The size is based on the specific amount of hardware that you would want for your specific virtual machine.
+
+Now let's close this.
+
+So we chose the operating system.
+
+That's by choosing the image.
+
+We chose the hardware.
+
+That's by choosing the family and the size.
+
+And the last thing that we would want to focus on is attaching a disk.
+
+So if you scroll up, you can go to disk in here, or you can do next disk clicking the button in here.
+
+So I'll go ahead and say this.
+
+And in this you can see that there is a boot disk which is always attached by default.
+
+So whenever you want to create a virtual machine you'd want an operating system.
+
+The operating system runs on the boot disk.
+
+So this OS disk is the boot disk.
+
+And in addition to the boot disk you can also attach data disks.
+
+So you can add and configure additional data disks for your virtual machine or attach existing disks.
+
+So you can go ahead and say create and attach a new disk and you can add a new disk.
+
+It's very similar to attaching an additional hard drive with your computer.
+
+So you can add more data disks to your virtual machine.
+
+In this step, we looked at some of the key concepts with respect to Azure Virtual machines.
+
+The first one is image.
+
+It helps you to choose the operating system and the software that you would want on your virtual machine.
+
+The next two are related to choosing the hardware VM family and VM size VM family changes based on the
+
+type of workload you are running.
+
+Do you want to run a general purpose application or a memory optimized application, or high performance
+
+compute application?
+
+And VM size helps you to choose a specific quantity of hardware you would want.
+
+I want two vCPUs and four GB of memory.
+
+You can choose the right size which has that amount of hardware and the last one is disks.
+
+The boot disk is where your operating system would run from Every virtual machine will have a boot disk
+
+attached with it.
+
+In addition, you can also attach data disks with your virtual machine.
+
+As you can see, cloud provides you with a lot of flexibility.
+
+You can choose different types of operating systems.
+
+You have different types of hardware which are available, and it gives you a lot of flexibility whenever
+
+you are creating your virtual machines.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.
+

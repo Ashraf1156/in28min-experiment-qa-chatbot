@@ -1,0 +1,78 @@
+Welcome back.
+
+In this step, let's look at one of the important Platform as a Service offerings in Azure related to
+
+containers, which is Azure Container Instances. Azure Container Instances help you to manage and
+
+run simple container-based applications. Just like App Service,
+
+you don't really need to worry about provisioning or managing your virtual machines. Azure Container
+
+Instances can help you to start containers in a few seconds.
+
+One important thing to remember is that even with Azure App Service you can deploy simple containers,
+
+that's what we did with NGINX earlier. Azure Container Instances makes it even more simpler to run containers.
+
+Let's quickly take a look at how you can use container instances.
+
+How do we create a container instance?
+
+You can just type in container instances in here.
+
+So, Container instances. Container instances is what we have picked up
+
+and I would want to create a container instance.
+
+And you would see that creating a container instance is very, very easy. As usual, select the subscription,
+
+resource group, compute-rg. The container name,
+
+I would say my-first-container-instance and I would choose region as East US.
+
+Let's pick up one of the Quickstart images which is provided by Azure. So, Quickstart images and let's use the
+
+helloworld which is provided by Azure itself, and let's use the size which is selected by default in here.
+
+And after that I can go ahead and say review and create. It's running the final validation right now.
+
+This would take about a few seconds usually, so let's wait for it to complete.
+
+And right now I can go ahead and say Create.
+
+The creation of the container instance would take a little while. It took a few minutes and our container
+
+instance is now ready.
+
+If I go over to the container instance, I can see all the details.
+
+You have the public IP address in here.
+
+I'll copy this and launch it up over here
+
+and it says Welcome to Azure Container Instances. We were able to easily deploy an application to Azure Container
+
+Instances. Over here, you can actually start, stop, and delete the container instance.
+
+You can also look at the Activity log.
+
+You can look at the different containers.
+
+So, this is the container which we are making use of right now.
+
+If you go to the Logs in here, you can see the logs behind that specific container.
+
+If you go back to the Overview, we can also see some of the metrics related to the container right
+
+in here.
+
+So, you can see CPU, Memory, Network bytes received,
+
+and all those details in here. As you can see, container instances makes it very, very easy to deploy
+
+containers to Azure.
+
+However, one of the biggest challenges with container instances is that they don't provide advanced
+
+orchestration features. That's what we would start exploring starting the next step.
+

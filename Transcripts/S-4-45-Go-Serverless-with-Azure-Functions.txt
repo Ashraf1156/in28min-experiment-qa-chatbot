@@ -1,0 +1,128 @@
+In this step, let's look at Azure Functions.
+
+What is Azure Function? Azure Function is a serverless offering from Azure.
+
+You don't worry about servers, scaling, or availability.
+
+You only worry about your code.
+
+You pay for what you use. When you're using Azure functions,
+
+you pay for what you use.
+
+You pay for the number of requests which are coming in.
+
+You pay for the duration of the request and the amount of memory that is consumed by your requests.
+
+Azure function supports a number of different languages; C#, Python, JavaScript, Typescript, and
+
+Java.
+
+Let's quickly create an Azure function and let's see how it works.
+
+Let's go over to Azure functions.
+
+Oops, functions. Let's try functions, let go over to Function App
+
+and let's say I would want to create a Function App.
+
+Over here, I'll choose the resource group as compute-rg,
+
+and I'll give the Function App name as my-function-
+
+app,
+
+and the App name my-function-app is not available. So, let's make it my-function-app-in28minutes.
+
+Now, you can select the runtime in here, let's say I would want to use Node.js.
+
+Let's now go ahead and say review and create.
+
+It took about 15 seconds, and after that, I can go ahead and say create. It took a little while for the
+
+deployment to complete and after a minute or so, the deployment has succeeded.
+
+Let's go to the resource
+
+and over here, you can go to Functions.
+
+This is where you can write your functions.
+
+Let's go ahead and add a function.
+
+As you can see in here, there are a lot of templates which are present.
+
+You can either run a function on a HTTP trigger when a URL is invoked or you can trigger a Azure function on
+
+a schedule.
+
+This is called a Timer trigger, or whenever a message is placed on a queue, or a number of other events.
+
+For now, let's focus on HTTP trigger.
+
+Let's choose HTTP trigger and create a template based on it.
+
+Let's choose the default names that are suggested
+
+and let's say Add. One of the important things that you are noticing with respect to function is that
+
+you are making very few choices.
+
+One of the most important choices that we made until now is the language, Node.js. Other than that, we did not make
+
+any other configuration related to availability, or scalability, or things like that.
+
+And that's what is one of the important characteristics of serverless;
+
+you just focus on the code.
+
+So, if you go to Code + Test,
+
+you'd be able to see the code for the specific function.
+
+You can actually change the code, you can change the code as per your requirement.
+
+I'm fine with whatever template is generated.
+
+So, what I would do is to do a Test/Run.
+
+One of the options to test it is go here, and test and run it, directly in here.
+
+So, you can use this, send this body, and I can say Run,
+
+and you can see the response coming back in here. So, you can see the response coming back saying "Hello,
+
+Azure. This HTTP triggered function executed successfully".
+
+The other option to run it is to get a function URL. So, you can get a function URL, let's go
+
+for the default one, let's copy to clipboard, and let's run that.
+
+You can see that I can also invoke the function from a URL.
+
+The great thing about Azure functions is it is auto-scales.
+
+If there are 1000, 10,000, or a million requests coming in, it would auto-scale.
+
+And the other important serverless characteristic is you pay for what you use.
+
+Until now we have not configured,
+
+I would want this many instances, or
+
+I would need this much hardware.
+
+All that you'd care about is how many requests, what is the duration of the request, and what is the memory
+
+consumed,
+
+and you'd pay based on that. Azure functions also offers you a always free tier of one million requests
+
+per month.
+
+So, when you are using Azure functions, you just focus on your code.
+
+You don't worry about servers, or scaling, or availability.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.
+

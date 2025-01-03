@@ -1,0 +1,47 @@
+Welcome back.
+
+In the last section, we learned how to create virtual machines, how to load balance between them
+
+using load balancing, and how to create scale sets. Managing virtual machine, scale sets, and load balancing
+
+is a very manual thing.
+
+How do we automate all these?
+
+That's where we go for Managed
+
+Compute Services. In this section, we will understand the fundamentals of Infrastructure as a Service,
+
+we will understand what is Platform as a Service, we will understand what is Software as a Service,
+
+and we'll also look at some of the important managed compute services that are provided by Azure. We will
+
+be getting started with Azure App Service, which makes it very, very easy to deploy applications to
+
+Azure. When you're using Azure App Service, you don't need to worry about virtual machines or you don't need
+
+to worry about load balancing.
+
+You just tell App Service, this is a web application I would want to run and App Service would take care of everything
+
+that you would need. After exploring App
+
+Service, we would move towards Containers. We will understand what is a container, why we need containers, and
+
+we would look at the different services related to containers in Azure.
+
+We'd be looking at Azure Container Instances,
+
+we'd be looking at Azure Kubernetes Service, and we will be looking at Azure Service
+
+Fabric. From Containers, we will switch our attention to Serverless. We will understand what is serverless
+
+and we will also understand how to create Serverless functions
+
+using Azure functions. At the end of the section, we will also learn what is a shared responsibility model,
+
+and we'll explore some of the important scenarios when it comes to managed compute services in Azure.
+
+I'm sure you are all excited to get started with Managed Compute Services and I'll see you in the next
+
+step.

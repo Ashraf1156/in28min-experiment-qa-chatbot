@@ -1,0 +1,174 @@
+Transcript
+In the previous step, we initiated the process of creating a virtual machine.
+
+It took a couple of minutes and after that I saw this message your deployment is complete.
+
+And what I can do now is go to resource.
+
+So this would take me to the virtual machine that we have just created.
+
+Another way you can reach this is by typing the name.
+
+So if you type in my hyphen first hyphen VM, you can pick the specific virtual machine from the resources.
+
+Another way you can reach this screen is by typing in virtual machines.
+
+Type in virtual machines.
+
+Pick up virtual machines and you would see the my first VM in here.
+
+And you can click this.
+
+So this is the virtual machine screen of my first VM.
+
+In this specific screen you can perform a number of operations.
+
+With your virtual machine.
+
+You can restart the virtual machine.
+
+You can stop the virtual machine if you want.
+
+You can even delete the virtual machine.
+
+What we are interested in is we would want to connect to the virtual machine and execute a few commands.
+
+And the way we can connect with the virtual machine is by clicking on connect.
+
+Once you click connect, you should see an option called connect in here.
+
+So click connect again.
+
+And within a few seconds this page would load up.
+
+And it would show the public IP address of the virtual machine.
+
+So this is the address you can use to access to talk to the virtual machine.
+
+And if you scroll down you should see an option called SSH using Azure CLI.
+
+This would help us to quickly connect in the browser.
+
+What I'll do is I'll do a select of this.
+
+Once you click select, there would be a validation which is performed by Azure.
+
+And within a few seconds you should see ready for configuration.
+
+One of the things you'd see in here is that there are a number of prerequisites for connecting using
+
+SSH using Azure CLI.
+
+You'd see that some of these are green already.
+
+Port 22 access is green.
+
+Public IP address is green.
+
+However, there are a few more things that we would need to enable.
+
+The way we can do that is by first checking this checkbox.
+
+What we are saying in here is I understand just in time policy on the virtual machine may be reconfigured
+
+to allow any source IP to request, just in time, access to port 22.
+
+This might sound very, very technical, but what we are saying is we are okay with enabling SSH access
+
+to the specific virtual machine from any source IP addresses.
+
+What I would do now is to go ahead and say configure and connect.
+
+You can see that these three things are now being performed.
+
+We don't really need to worry about the details of all these three for now.
+
+We will talk about some of them a little later in the course.
+
+For now, let's wait for all of them to complete.
+
+Okay, took about five minutes and after that I see this screen come up which says Welcome to Azure
+
+Cloud Shell.
+
+If you had any problem with this, if the screen hanged or something like that, in that kind of scenario,
+
+you can also close this SSH with Azure CLI and try again to connect using SSH using Azure CLI.
+
+For me it was successful at the first attempt.
+
+And I see this screen.
+
+Welcome to Azure Cloud Shell.
+
+In the Azure Cloud Shell you can either use bash or PowerShell.
+
+I would recommend you to go with bash for now.
+
+Let's go with bash on the screen you can say that you don't need the storage account, and I would choose
+
+the subscription as whatever is the value which is present in here.
+
+For me, I see free trial in here, so I choose free trial and I would go ahead and say apply.
+
+So what we are doing is we are trying to connect to the virtual machine that we have created using SSH,
+
+and we are making use of Azure CLI for doing that.
+
+So we are basically launching up a command line.
+
+Within a minute or so, you'd see that Azure would execute a command, and it would ask you if you want
+
+to continue connecting, I would say yes.
+
+After a few seconds, you should see the command prompt come up to make things easy for you.
+
+I would actually increase the text size to large and I would go full screen.
+
+So over here I can do a maximize.
+
+So I'll do maximize so that you can see the entire screen which is present in here.
+
+So we are now connected to the my first virtual machine from the command line.
+
+If you type in who am I?
+
+Who am I is a command a Linux command to find out the user ID who is logged in.
+
+You can see that the user ID was logged in is in 28 minutes.
+
+Dot Lerner at minutes.lerner@gmail.com.
+
+You can also execute a command like Python three hyphen hyphen version.
+
+So Python three space hyphen hyphen version.
+
+This would return the version of Python which is installed.
+
+Python 3.8. ten.
+
+So this is the version of Python which is installed on this specific virtual machine.
+
+So what we are doing now is connecting to the virtual machine and executing a few commands on it.
+
+One of the most important things for you to remember is that the exact commands are not really, really
+
+important.
+
+There are a lot of technical concepts that are involved when we create and connect to a virtual machine,
+
+you don't really need to understand all that.
+
+Having a high level overview is more than sufficient as far as the exam is concerned.
+
+I just wanted to show you what is involved in creating a virtual machine and connecting to it.
+
+The exact commands here you don't really need to remember as far as the exam is concerned.
+
+All that you need to remember is that you can create a virtual machine using Azure.
+
+You can configure different hardware, you can configure different operating systems, and you can choose
+
+how you'd want to connect to the specific virtual machine.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.

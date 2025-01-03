@@ -1,0 +1,177 @@
+Welcome back.
+
+You have built container images for your microservices and you are able to easily run containers with them.
+
+You have built a container for Microservice A, B, C, and D. And now,
+
+you'd want to actually manage the deployment of these containers.
+
+You'd want to ensure that you would be able to auto-scale the number of container instances that are
+
+running based on the load. You might have requirement saying
+
+I want 10 instances of Microservice A container, 15 instances of Microservice B container, and so
+
+on, and so forth.
+
+Just having containers is not sufficient.
+
+You would need some kind of an orchestration around these container, and that's where there are a number
+
+of container orchestrator solutions.
+
+If you have heard about Kubernetes, then Kubernetes
+
+is one of the most popular open-source container orchestrator solutions. When you're using this
+
+container orchestrator solution,
+
+you can say, this is the container image for Microservice A and I would want 10 instances of it.
+
+This is Microservice B, I'd want five instances of it or 15 instances of it.
+
+And the container orchestrator tool would manage the deployment of these containers into clusters.
+
+Each of these clusters can have multiple servers and these container orchestrators typically offer a
+
+number of features. Auto-scaling.
+
+You can say this is the container image for Microservice A and I expect a lot of load on it.
+
+So, I would want to auto-scale.
+
+So, based on the number of request which are coming into Microservice A, the container orchestrator
+
+can scale the number of instances of that specific container. Service Discovery is very, very important
+
+feature for microservices.
+
+You might have 10, 15, 20, or 100 microservices. You don't want to hard code the URLs of each microservice
+
+in another microservice.
+
+That's where the concept of service discovery comes into picture.
+
+Each microservice can ask the container orchestrator for the location of other microservices.
+
+And thereby, you don't really need to hard code the URLs. As soon as I start talking about multiple containers,
+
+you need to also talk about load balancing.
+
+Once I have multiple containers, I'd want to distribute the load between them.
+
+Container orchestrators also provide load balancing.
+
+You also want resiliency.
+
+If one of the instances of a microservice is not working properly,
+
+you'd want the container orchestrator to identify that and replace it with a working instance.
+
+That's where you can configure health checks, and the container orchestrator can execute frequent health
+
+checks, and replace failing instances.
+
+This is also called Self Healing. Not only that, you also want zero downtime deployments. You might
+
+want to go from version 1 to version 2 of Microservice A.
+
+However, you don't want any downtime.
+
+Container orchestrators also provide a number of strategies to release your new versions of software
+
+without downtime. Kubernetes
+
+is one of the most popular container orchestrator tools.
+
+All the cloud providers provide Kubernetes managed services.
+
+So, EKS which is provided by AWS or Elastic Kubernetes Service. AKS, Azure Kubernetes Service.
+
+You also have GKE, Google Kubernetes Engine, which is provided by GCP.
+
+Now that we looked at what container orchestration is, let's look at AKS and Service Fabric, which
+
+are the container orchestration services in Azure.
+
+Whenever we use a container orchestrator,
+
+the first thing that we would want to create is a cluster.
+
+So, the first step is to create a cluster with a number of nodes or a number of virtual servers.
+
+Once you have a cluster, then you can deploy your microservices to the cluster.
+
+And that's exactly what you can do with these two Azure services as well.
+
+AKS stands for Azure Kubernetes Service. Kubernetes is one of the most popular open-source container orchestration
+
+tools.
+
+And Azure Kubernetes Service makes it easy for you to set up Kubernetes clusters in Azure. It's a managed
+
+Kubernetes service.
+
+The other service which is present for container orchestration in Azure is Azure Service Fabric.
+
+This is a Microsoft-specific container orchestrator solution.
+
+So, this service is not offered on any other clouds.
+
+If you look at Kubernetes, there are managed services for Kubernetes in Azure, AWS,
+
+and Google Cloud.
+
+So, if you'd want crossout compatibility, you can go with Azure Kubernetes Service.
+
+Let's quickly see where they are in the interfaces. So,
+
+let's go for AKS,
+
+Azure Kubernetes Service or Kubernetes services. Over here, what you can do is to create a Kubernetes cluster.
+
+So, you can say Add Kubernetes cluster
+
+and what do we do when we create a cluster?
+
+You'd configure the cluster and the different nodes.
+
+So, over here you can configure the different details related to the cluster.
+
+You can give it a name, you can choose which availability zones, which version of Kubernetes to use,
+
+and you can use the primary node pool.
+
+You can configure the size of the node.
+
+What should be the size of each of these virtual machines
+
+and you can configure how many nodes should be present.
+
+Once you create the cluster, you'd be able to deploy your applications to it.
+
+The other service which is present is Service Fabric.
+
+So, if you search for Service Fabric clusters, you should get this. The approach is very, very similar.
+
+What you'd need to do first is to create a cluster.
+
+So, you'd go in, you'd say Add, and over here, you can see that you would create a cluster first. Similar to
+
+Kubernetes,
+
+you'll also configure
+
+what is the type, how many VMs do you want, and you can configure a few more other details. In this
+
+step,
+
+we looked at the two important container orchestration services in Azure; AKS and Service Fabric.
+
+The details of AKS and Service Fabric are not really important as far as the exam is concerned.
+
+As long as you know containers, container orchestration, and what AKS and Service Fabric do
+
+at a high level, that's more than sufficient. I'm sure you are
+
+having a wonderful time and I'll see you in the next step.

@@ -1,0 +1,29 @@
+Demo Update: Please Choose Consumption as Hosting Model
+WHAT HAS CHANGED?
+
+While creating a function app, you need to choose a Hosting Model
+
+
+
+WHAT SHOULD YOU DO?
+
+Choose Hosting Model as Consumption as shown below.
+
+
+
+
+
+
+FAQ:
+
+
+
+What is Consumption option in Azure Function App?
+
+The Consumption option in an Azure Function App is a pricing plan where you pay only for the compute resources used during the execution of your functions. It automatically scales to meet demand, handling the infrastructure management and scaling, which helps optimize costs by charging based on actual usage rather than pre-allocated resources.
+
+
+
+Keep Learning Every Day
+
+Ranga

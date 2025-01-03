@@ -1,0 +1,31 @@
+Welcome back. In this step,
+
+let's look at Azure App Service. As we discussed earlier, Azure App Service is a Platform as a Service
+
+offering from Azure. It is a fully-managed platform for building, deploying, and scaling your web applications.
+
+You can deploy web applications, REST APIs.
+
+You can deploy mobile back ends to App Service as well.
+
+It supports a wide variety of languages;
+
+.NET, .NET Core, Node.js, Java, Python, PHP.
+
+You can deploy applications which use any of these languages and with a few clicks of a mouse, you
+
+can deploy a highly-available application to Azure App Service. Before you'd deploy an application to Azure App
+
+Service, a important thing that you need to choose is a App Service Plan.
+
+You need to define the hardware or the compute resources that you would want for your web application.
+
+There are a wide variety of plans that are available.
+
+You need to choose the one which is right for your circumstances.
+
+Azure App Service offers a number of services; automatic deployment and management, auto-scaling,
+
+and built-in load balancing, I'll see you in the next step,
+
+where we would get our hands dirty with App Service.

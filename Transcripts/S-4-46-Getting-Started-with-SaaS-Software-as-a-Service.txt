@@ -1,0 +1,59 @@
+Welcome back. In the
+
+last few steps, we talked about Infrastructure as a Service and Platform as a Service.
+
+One other offering which is also popular is SaaS or Software as a Service.
+
+What is SaaS? SaaS comes into picture when you have centrally hosted software, mostly on the cloud, and you
+
+are offering the software on a subscription basis.
+
+A good example is let's say, I talk about Outlook 365, or Microsoft Office 365, or Gmail, or Google Docs.
+
+These are services which are offered on the cloud.
+
+These are email, calendaring and office tools. To make use of this,
+
+I don't need to worry about hardware, or software, or applications.
+
+All that I need to do is to log in with the right IDs
+
+and I can go ahead and create my documents, or I can write my emails, or I can manage my spreadsheets.
+
+These kind of software are part of Software as a Service category.
+
+The users of this software don't need to worry about any of the details behind the software, or hardware,
+
+or the applications that are used to run these applications.
+
+Other SaaS examples include CRM applications, ERP applications, and document management tools.
+
+With all these, you only worry about the configuration.
+
+You don't worry about how the applications are architectured or built.
+
+If the SaaS software is provided by a cloud provider, then the cloud provider is responsible for the OS
+
+including upgrades and patches, application runtime.
+
+The cloud provider is responsible for auto-scaling, availability, load balancing, application code,
+
+application configuration.
+
+Customer is only responsible for configuring the software. If you're making use of Gmail, login and
+
+send your emails,
+
+that's what your responsibility is.
+
+You don't really care.
+
+You don't really care what language is used to build Gmail or what happens behind the screens with servers
+
+and things like that.
+
+The same is the case with Outlook 365 or Microsoft Office 365.
+
+All these are part of a category called Software as a Service.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.

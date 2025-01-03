@@ -1,0 +1,228 @@
+Transcript
+Welcome back.
+
+In this step, let's look at how you can actually design good solutions with virtual machines.
+
+There are a lot of architectural characteristics that we typically talk about. Let's review them and let's
+
+see how you can achieve them using a virtual machine. Availability,
+
+are the applications available when your users need them? If you'd want high availability for your virtual
+
+machines, you can create Availability Sets and Scale Sets, and you can load balance using a load balancer. Scalability,
+
+what is scalability?
+
+Scalability is all about,
+
+can we handle a growth in users, traffic, or data size without any drop in performance?
+
+Let's say an application has 10,000 users and let's say the number of users double very quickly.
+
+Can we handle that growth?
+
+That is what is scalability.
+
+Whenever we talk about scalability, there are two types of scaling.
+
+One is Vertical scaling, where you increase the hardware that is available for your instance. Instead
+
+of deploying an application to a small instance, you would deploy to a large instance.
+
+So, deploying an application or a database to a bigger instance is called vertical scaling.
+
+For example, you increase the size of your hard drive,
+
+you increase the CPU size which is attached with your virtual machine instance,
+
+you'd want to have more RAM, or CPU, or I/O, or networking capabilities associated with your virtual machine,
+
+that is what is called vertical scaling. In Azure,
+
+for a virtual machine, you can increase the size of a virtual machine.
+
+You can go and select your virtual machine.
+
+Over here, you can go over to Size. Once you go over to size,
+
+you'd be able to change the size of a virtual machine to a new size.
+
+So, instead of B1s, you can choose B2s or something else.
+
+As you can see in here, whenever you change the size, the virtual machine will be restarted.
+
+However, very, very important thing to remember is that there are limits to vertical scaling.
+
+There is a maximum amount of memory that you can have on a specific system.
+
+Beyond that, you cannot increase memory
+
+and that's why typically we go for Horizontal scaling.
+
+In Horizontal scaling, we deploy multiple instances of an application or a database. For example,
+
+earlier when we created a scale set, we deployed two instance of a virtual machine. Using a scale set,
+
+I can increase the number of instances to three, four, or ten, if I would want.
+
+So, we are creating multiple virtual machine instances and we are load balancing between them using a
+
+load balancer.
+
+This is what is called Horizontal Scaling.
+
+Typically, Horizontal Scaling is preferred to Vertical Scaling,
+
+why?
+
+Because vertical scaling has limits. Beyond a limit, you cannot increase the amount of CPU. Beyond
+
+the limit,
+
+you cannot increase the amount of memory.
+
+Vertical scaling can be very, very expensive as well.
+
+Buying a very, very powerful CPU might be really, really expensive
+
+and the other important reason is horizontal scaling not only increases the performance, but also increases
+
+availability.
+
+Even if one of these instances goes down, the application can be served from the rest of the instances.
+
+However, you don't get that with vertical scaling.
+
+If you increase the size of an instance, if it fails, the complete application is down.
+
+However, with horizontal scaling, even if one of the instances is down, you can serve the application
+
+from the other instances.
+
+But horizontal scaling needs additional infrastructure.
+
+You need scaling sets,
+
+you need load balancers, and a lot of other things.
+
+So, with VMs, you can handle scalability into a vertical scaling by increasing the size, horizontal
+
+scaling by using scale sets and load balancers.
+
+Typically, the type of scalability which is preferred with virtual machines is horizontal scalability.
+
+You would want to be able to create a scale set,
+
+you would want to be able to create a load balancer to load balance between them,
+
+and you also want to enable auto scaling, so that the number of instances increases and decreases based
+
+on the load.
+
+The next architecture factor that we would consider is Resilience.
+
+What is Resilience? The ability of a system to provide acceptable behavior even when one or more parts
+
+of the system fail.
+
+If I have a scale set with ten instances and let's say, one of them goes down, what would happen?
+
+Will the application go down?
+
+Nope, the application will not go down because we have a load balancer.
+
+Load balancer will be able to identify that the virtual machine is down and it will not send the request
+
+to the failed machine.
+
+It will only send the request to the active virtual machines.
+
+So, even if one of the parts of the system fails, we are able to provide acceptable behavior.
+
+The next important architectural consideration is Geo-distribution.
+
+What is Geo-distribution?
+
+It's all about distributing applications across multiple regions and multiple zones.
+
+With virtual machines, you can create a scale set and you can distribute the application across multiple
+
+availability zones.
+
+If you'd want to create applications across different regions using virtual machines, then you'd need to
+
+create two scale sets, one in region1 and the other one in region2. The next important factor
+
+to consider is Disaster Recovery.
+
+How do you keep your applications running in phase of disasters?
+
+If a entire region fails, if an entire data center fails, how can you protect yourself?
+
+In those kind of situations, you would need to go for Site Recovery. What is Site Recovery? Inside the virtual
+
+machine, you can type in, site and you can go to Disaster recovery. Azure Site Recovery can replicate
+
+your virtual machines to another region for business continuity and disaster recovery needs.
+
+So, over here you can choose the Target region. So, over here you can choose the Target region and you can
+
+say, Start replication. I'm not going to enable that right now.
+
+But it's very, very important that you know that there is something called Site recovery. Site Recovery
+
+helps you with disaster recovery for virtual machines.
+
+You can set up Site Recovery,
+
+you can select a Target region,
+
+and whenever there's an outage in the source region, the virtual machine will be deployed to the target
+
+region.
+
+The last consideration whenever we are designing good solutions is costs. You want to keep your costs as
+
+low as possible.
+
+The way you can do that is by using reservations.
+
+You can create a one year or a three year reservations,
+
+as we looked at earlier.
+
+You can use Spot Instances if you have fault-tolerant workloads which are not immediate, which are
+
+not important right now
+
+and you can also enable auto-scaling. Increase the number of instances and decrease the number of instances
+
+based on load,
+
+this is also called Elasticity.
+
+Based on the load, we are increasing or decreasing the number of instances.
+
+The last, but the most important factor to consider is Security.
+
+You need to always secure your VMs.
+
+We already saw that
+
+to SSH into your VM, you would need a private key.
+
+In addition, you can also improve the security of your VMs by going for dedicated hosts.
+
+A little later in the course, we will also look at how you can create your own virtual networks, and how you
+
+can create network security groups, and further secure your virtual machines.
+
+In this step, we looked at how you can design good solutions with virtual machines.
+
+We looked at the different factors to consider and we looked at some of the important features in Azure
+
+VMs which can help.
+
+I'm sure you're having a wonderful time
+
+and I'll see you in the next step.

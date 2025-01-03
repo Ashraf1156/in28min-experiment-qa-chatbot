@@ -1,0 +1,187 @@
+Transcript
+Welcome back. In this step,
+
+let's look at a few scenarios related to virtual machine. How can you automatically scale up and scale
+
+down VMs? We can use scale sets
+
+and we can enable auto scaling.
+
+How can you protect VMs from data center failures?
+
+I have a set of virtual machines.
+
+Even if a specific data center fails, I don't want the entire application to go down.
+
+How can we do that?
+
+What we can do is to deploy them to multiple availability zones. To protect from a single data center
+
+failure, you can deploy to multiple availability zones.
+
+So, even if one of the data centers in an availability zone fails, you can serve the application from
+
+another availability zone.
+
+How much availability do you get by deploying two or more virtual machines in two or more availability zones in the
+
+same region?
+
+We already discussed about this.
+
+It's 99.99%.
+
+How can you perform disaster recovery for your VMs?
+
+We looked at it as well,
+
+Site Recovery. You can use Site Recovery to configure a secondary region and whenever there's a problem with
+
+the primary region,
+
+you would have disaster recovery performed and the VM would be copied over to the second region.
+
+How can you reduce your costs for your VMs?
+
+We looked at a few options. Auto scaling, which is elasticity, Reserved and Spot Instances.
+
+Another factor that you need to typically consider when you talk about cost is selecting the right
+
+region.
+
+One of the important things to remember is that your costs for your VMs are not stable.
+
+Cost vary with time and also costs vary from region to region.
+
+Some regions might be cheap, some regions might be expensive.
+
+If I go over to virtual machines and let's add a virtual machine. I'll choose compute-rg and let's give it
+
+a name
+
+and let's say Review and Create. And over here, you can see that B1s is 0.7493
+
+Indian Rupees per hour.
+
+This is applicable to East US region. So, it's 0.7493.
+
+If I go back to previous
+
+and go back to Basics and let's say I'd change the Region.
+
+I would change it to, let's say,
+
+Central India
+
+and I'd say Review and Create.
+
+You'd see that there is a change in price, this is 0.8069 INR per hour. There
+
+is a small change in price over here.
+
+If you'd want to see all the details around prices, the best place to go is Pricing Calculator.
+
+If you do a Google for Azure Pricing Calculator, you'd land up on this and this is where you can configure
+
+and estimate the costs for your Azure products. So, you can say virtual machines and virtual machine
+
+is now added.
+
+I can go and say, View and it would take me down to the virtual machines and you can see the cost.
+
+So, you can see that for the specific configuration that we have in here, which is D2 v3,
+
+Windows in West US, the compute price for pay as you go is about 85 dollars per month
+
+and let's change it to some other region.
+
+Let's just say I would change it to South India
+
+and you can see that it increases up to 98 dollars.
+
+You can see that there is a substantial increase.
+
+As we discussed earlier, if you go for one year reserved, you'd get it cheaper. So, you'd get it for
+
+62 US dollars.
+
+If you go for three years reserved, you would see that it is further cheap,
+
+it goes down to 39.53.
+
+So, this is a good place where you can go and explore the costs related to all the services.
+
+We will talk about Pricing Calculator in depth a little later as well.
+
+So, to reduce the cost for your VMs, you can consider elasticity, auto scaling, reserved instances,
+
+spot instances, and making sure that you are choosing the right region for your workload.
+
+Next scenario, will you billed if you stop a VM?
+
+The answer is yes.
+
+Even though you stop the VM, there is disk storage which is attached with your VM.
+
+You'd need to pay for it
+
+and that's the reason why the best practice is to delete all the resources that are associated with
+
+your VM if you don't want to get billed.
+
+Next scenario, will two VMs of same size always cost the same?
+
+We already talked about it.
+
+The answer is no. Price changes with time and also price is different in different regions
+
+and that's the reason why two VMs of the same size might not cost the same always.
+
+The last question is, how can you know who performed a specific action on a specific VM or a Scale
+
+Set?
+
+The way you can do that is by using Activity logs.
+
+These activity logs are kept for 90 days.
+
+Where can you look at activity logs?
+
+Let's go back to Virtual machines
+
+and let's pick up our second virtual machine
+
+and over here, you can actually type in activity.
+
+It's right here.
+
+This is where you can go in and look at all the activity logs around that specific virtual machine.
+
+So, you can see Start Virtual Machine, Deallocate, Restart. So, all the events you can see them in
+
+here. The same thing is also available on most other resources.
+
+So, if I go to scale sets,
+
+Virtual machine scale sets,
+
+we have a Virtual machine scale set which is created, and this also has an activity log.
+
+So, you can see that there are a lot of activities which are logged under the activity log for the VM scale
+
+set.
+
+I'm sure you had a wonderful time talking about virtual machines in the last few steps.
+
+Our goal with this section was to give you a very good introduction to cloud computing with virtual machines.
+
+As you can see, setting up applications with virtual machines is not a very, very easy task.
+
+You need to configure a lot of things to get your applications running on virtual machines
+
+and that's where we would start focusing on managed services, starting next section.
+
+I'm sure you are having a wonderful time and I'll see you in
+
+the next step.
+

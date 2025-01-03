@@ -1,0 +1,416 @@
+Transcript
+Welcome back.
+
+In the previous steps, we created a virtual machine and we connected to it.
+
+In this step, let's try and install some useful software on it.
+
+We will try and install a HTTP server.
+
+You have a few web pages and you would want to serve them from a HTTP server.
+
+The specific HTTP server that we are going to make use of is something called nginx.
+
+Nginx is one of the most popular web servers out there.
+
+We will try and install nginx in this specific step.
+
+Are you excited to install your first piece of software on a virtual machine?
+
+Let's get started!
+
+All the commands that we'll be using are made available to you in the course as part of the previous
+
+lecture.
+
+These are also available in the course presentation.
+
+What I would recommend you to do is to copy all these commands, copy them and put them into a text
+
+editor of your choice.
+
+So I copied them and put them into a text editor of my choice.
+
+Any text editor should be fine.
+
+Notepad or Textpad or Sublime Text, or any text editor of your choice should be fine.
+
+All that you need to be able to do is to do a copy paste.
+
+So you should be able to copy the command from here and paste it.
+
+Before we run any command, the first thing we would want to ensure is that we are connected to the
+
+virtual machine.
+
+So if I type in who am I in here, for example, you can see that in 28 minutes.
+
+Lerner at gmail.com is coming up.
+
+If you don't see something, if you see a connection, error or something, the first thing you can
+
+do is to close this and you can go ahead to virtual machines.
+
+Let's go back to virtual machines.
+
+Pick up the first virtual machine.
+
+You can say connect, connect.
+
+And the thing which we are doing is to SSH using Azure CLI.
+
+So let's do a select in here.
+
+And all these should be preconfigured for us.
+
+So let's go ahead wait for the validation to complete okay.
+
+It took about 15 seconds after which the validation was complete.
+
+And I can see the cloud shell come up.
+
+Now, I can maximize this and I can use this to run my commands.
+
+Let me wait for a little enough.
+
+Cloud shell is ready to accept my commands over here.
+
+The first command I will execute is clear.
+
+Clear.
+
+All that it does is to clear the screen.
+
+So clear will clear the screen.
+
+And it will take the cursor to the top of the command line.
+
+This will enable you to see the commands clearly.
+
+Over here you can type in a command like who am I?
+
+This gives you the user ID.
+
+Now what I want to do is to install some software on this specific virtual machine.
+
+And to install the software you need admin permissions.
+
+How do I get admin permissions?
+
+The command in Linux to be able to do that is sudo su.
+
+So now I have admin permissions to sudo space.
+
+Su will give me admin access.
+
+So you can see that now I have root access I can install any software that I would want to install.
+
+That's the command in here sudo su.
+
+Next I would want to install nginx.
+
+That's the HTTP server that we would want to install.
+
+However, before installing nginx we would want to ensure that everything related to packages on the
+
+specific virtual machine is up to date.
+
+The package manager that we are making use of is apt.
+
+Hyphen git.
+
+You don't really need to worry about the details in here.
+
+The package manager is apt get, and we would want to ensure that all the packages are up to date,
+
+and this is the command we use to ensure that the packages are up to date.
+
+So it's apt.
+
+Hyphen get space hyphen y space update.
+
+The exact command is not really important.
+
+Let's go ahead and copy it and execute it.
+
+So apt.
+
+Hyphen hyphen update sorry hyphen y update.
+
+And you can see that the packages are now up to date.
+
+Once the packages are up to date, we can go ahead and install Enginex.
+
+The way we can install Enginex is by using another apt get apt get is like a package manager.
+
+We are telling this package manager hey package manager, go ahead and install nginx.
+
+I want to install nginx on my on my virtual machine.
+
+Let's copy this command.
+
+It's apt get hyphen y install nginx.
+
+You can go ahead and say enter.
+
+And this would install nginx on the virtual machine.
+
+The installation would take a minute or so.
+
+So let's wait for the installation to complete.
+
+Yep, the installation is now complete.
+
+Let's do a clear so that we can go back to the top.
+
+So I executed clear command to go back to the top.
+
+And over here and over here we want to check that Ingenix is properly installed.
+
+How can we check if the ingenix is properly installed or not?
+
+Once a web server is installed on the virtual machine, we should be able to use a URL and access the
+
+web server.
+
+How can we get the URL?
+
+How can we get the IP address?
+
+That's where we would go back to the second tab that we opened up earlier.
+
+This is where we were playing with the Azure Web portal.
+
+This way we are playing with the web application of the Azure portal.
+
+The way you can bring it up is by clicking the hamburger icon.
+
+And you can probably say right click on home and say Open in New tab.
+
+I have already done that and this is already opened in here and over here.
+
+What you want to find out is the URL of the nginx server, which is installed on our virtual machine.
+
+I'll go over to virtual machines, or you can type in virtual machines in here.
+
+So you can type in virtual machines.
+
+Okay.
+
+That's not a problem.
+
+Your portal Azure.com says your unsaved edits will be discarded.
+
+No problem.
+
+I'll say okay.
+
+And I can see my first.
+
+And I can see my first VM in here.
+
+I'll click that.
+
+And over here, if you scroll down you'd be able to see the public IP address.
+
+This is what we would want to copy.
+
+So this is what you would want to copy.
+
+Now it's copied.
+
+And I'll open up a new tab and put that in here.
+
+So 20 dot 70 dot 214 .203.
+
+Your VM will have a different public IP address.
+
+That's not a problem.
+
+So let's go ahead and press enter.
+
+It will take a few seconds at the end of which you should see welcome to nginx.
+
+If you see this page the nginx web server is successfully installed and working.
+
+We can further configure it, but the basic nginx web server is now successfully installed and working.
+
+If you have problems accessing this, the first thing that I would recommend you to do is to check that
+
+you are not using Https.
+
+So if you're using https, colon 20 dot 70 dot 214 .203.
+
+That will not work.
+
+What we will need to do is to use HTTP.
+
+So if you are seeing https in your URL when you go to the browser, then change it to HTTP.
+
+So if you type in http colon slash slash 20 dot 70 dot two, 14 dot 2 or 3, whichever is the IP address
+
+that you have, you should see.
+
+Welcome to nginx.
+
+Come up.
+
+Now just to make this further interesting, let's try and customize this page instead of this.
+
+Welcome to nginx.
+
+I would want to see Hello World in here.
+
+How can I do that?
+
+The command to do that is in here.
+
+Echo getting started with Azure Virtual Machines and we would want to pipe it to this specific file.
+
+Now you might be wondering what are we doing in here.
+
+Right.
+
+So this looks like a very complex command.
+
+So let's try and break it down.
+
+So let's go back to command line.
+
+And over here let's type in echo.
+
+Let's say echo.
+
+Hello world.
+
+What does this do?
+
+If I type in echo hello world between double quotes it would type Hello World to the screen.
+
+So echo is actually printing Hello World to the screen.
+
+Now what we want to do is we would want to store Hello World in a specific file.
+
+This is the default file which is being served by nginx.
+
+We would want to change this.
+
+We want to put hello world into this specific file.
+
+The path of this specific file that we would want to change is this slash where slash dub dub dub slash
+
+HTML, slash index dot HTML.
+
+And what we want to do is to send this text into this specific file.
+
+And that's why we are using the output redirection operator, which is greater than we would want to
+
+print this piece of text.
+
+Whatever is the piece of text which is outputted, we would want to redirect into this specific file.
+
+And what nginx does is it will pick up the content of this file and serve it.
+
+As I said before, the specifics of the commands are not really important.
+
+What is very important to remember is that we are customizing the web page which is installed on the
+
+nginx server.
+
+Let's go ahead and copy this command and paste it in here.
+
+So echo getting started with Azure Virtual Machines and we are redirecting it to this specific file.
+
+Now the redirection is complete I'll go back to the browser, the URL, the public IP we executed earlier
+
+and you can do a refresh or press enter.
+
+Here you can see that it's showing getting started with Azure Virtual machines.
+
+Now the next thing I would want to do is to show the name of the virtual machine in here.
+
+Which virtual machine is returning the response back.
+
+One of the commands in Linux, which can help you to find the name of the VM is host name.
+
+So if you type in host name you would see that my first VM is printed.
+
+So if I actually do echo for example and say host name, what do you expect?
+
+Echo within double quotes I'm putting in host name.
+
+What will you expect.
+
+It's actually printing the text host name.
+
+It's not printing the name of the virtual machine.
+
+Now if I want to print the name of the virtual machine, then the way I can do that is by saying echo
+
+and inside dollar parentheses.
+
+Host name and close parentheses and double quotes.
+
+And now I can go ahead and execute this.
+
+So you can see that my first VM is now printed.
+
+Now what I want to do is to print a simple message like this.
+
+Echo.
+
+Welcome to in 28 minutes host name.
+
+hostname.
+
+And I would want to show it in here.
+
+The way I can do that is by executing this command and redirecting the output to the same file as we
+
+did earlier.
+
+So I'll copy this command.
+
+And execute it in here.
+
+So echo welcome to in 28 minutes hostname.
+
+And we are redirecting it to this specific file.
+
+And now if I go back to the browser and refresh, you'd see.
+
+Welcome to 28 minutes and the name of the VM that we have configured.
+
+Now you might be wondering why did we do so many complex things in this specific step?
+
+The thing is, the name of the VM is something we'll use in the demos a little later.
+
+That's why we wanted to ensure that when we go to this URL, we'll be able to see the name of the VM.
+
+One of the important things I would want to stress again is that you don't really need to remember the
+
+exact commands which are executed in here.
+
+Some of these commands are really complex Linux commands, having a high level understanding of what
+
+we are doing in here.
+
+The fact that we created a virtual machine, we installed Enginex on it, and we are trying to customize
+
+the text that we show on the web page.
+
+That's basically all that you need to remember to be able to install nginx and customize the page in
+
+here.
+
+You saw that there are a lot of complex commands that you would need to execute, and before we execute
+
+the commands we needed to SSH into the Azure Virtual Machine.
+
+How do we simplify this?
+
+How do we install software without even connecting to the virtual machine directly?
+
+That's what we'll be looking at in the next step.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.

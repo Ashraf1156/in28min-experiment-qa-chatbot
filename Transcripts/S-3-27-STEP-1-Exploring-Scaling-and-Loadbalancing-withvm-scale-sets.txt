@@ -1,0 +1,272 @@
+Transcript
+Let's now start exploring virtual machine scale sets in Azure Portal.
+
+Earlier we created a couple of VMs.
+
+The first thing I would do is to delete these VMs.
+
+It's very, very important to be careful when you delete these VMs.
+
+What I'll do is get into my first VM, I'll say delete and I would say apply force delete.
+
+And it's very, very important to choose to delete the network interfaces and public IP addresses as
+
+well.
+
+So you can see that I'm selecting Apply Force Delete and choosing to delete the OS disk.
+
+The network interfaces the public IP addresses.
+
+And I would go ahead and check this as well.
+
+I have read and understand that this virtual machine, as well as any selected associated resources
+
+listed above, will be deleted.
+
+And let's go ahead and say delete.
+
+So this will so this will kick start the deletion of my first VM.
+
+What I'll also do is to go to virtual machines.
+
+Go to my second VM and click delete on this as well.
+
+Apply force delete network interfaces public IP addresses.
+
+So I've checked all of them.
+
+All these would be deleted.
+
+And I would need to check this checkbox in here and say delete.
+
+So this would delete all the resources for my second VM as well, because we are in the free trial.
+
+There are restrictions on how many virtual machines we can create in parallel.
+
+That's why you would want to ensure that we would want to delete these virtual machines before we get
+
+started with scale sets.
+
+What I recommend you to do is to wait for about 4 to 5 minutes before you would start with creation
+
+of the scale set.
+
+After about two minutes, my first VM is now deleted.
+
+Let's also wait for the second VM to be deleted.
+
+Even after waiting for five minutes, I see the second VM still in here.
+
+Let's go and try deleting it again.
+
+So let's go ahead and say delete.
+
+Let's choose all the options in here.
+
+So apply force delete OS disk network interfaces public IP addresses and check the checkbox and say
+
+delete.
+
+Okay, finally when I go to virtual machines I don't see any virtual machines in here.
+
+That's pretty good.
+
+What do you want to do is to create a virtual machine scale set.
+
+So if you type in virtual machine scale set, you'd see virtual machine scale sets in here.
+
+Earlier we created virtual machines.
+
+Now we would want to create virtual machine scale sets.
+
+So let's go and choose virtual machine scale sets and go ahead and say create.
+
+So Azure Virtual Machine scale sets let you create and manage a group of load balanced VMs.
+
+The number of VM instances can automatically increase or decrease in response to demand or a defined
+
+schedule.
+
+Scale sets provide high availability to your applications and allow you to centrally manage, configure,
+
+and update a large number of VMs.
+
+As usual, let's go ahead and select the resource group compute RG.
+
+So let's choose the defaults for subscription.
+
+Let's choose resource group as compute rg.
+
+Next we would want to provide the virtual machine scale set name.
+
+I'll configure the name as VM scale set one.
+
+I'll recommend to choose the same region that you used when you were creating your previous virtual
+
+machines.
+
+You can also choose to distribute your virtual machines across multiple availability zones.
+
+So I would say I would want to distribute my virtual machines across multiple zones zone one, zone
+
+two, and zone three.
+
+What we want to run is a very, very simple web application or a web page.
+
+So I would go with uniform orchestration mode.
+
+So I'll choose the uniform orchestration mode.
+
+This is optimized for large scale.
+
+This is optimized for large scale stateless workloads with identical instances.
+
+We would want to create all VMs with identical configuration.
+
+So I'll choose uniform as the orchestration mode.
+
+When it comes to scaling, you have a number of options.
+
+You can either choose to do it manually or you can say auto scale.
+
+You can choose the metric that you want to use for auto scaling by clicking configure.
+
+For now, let's keep it simple.
+
+Let's say I would want to manually update the capacity.
+
+I want to maintain a fixed amount of instances.
+
+The initial number of instances I would want to create is two.
+
+Let's leave it at two.
+
+I'll choose the default image and size that are recommended.
+
+As far as authentication is concerned, we will use the same pair that we used earlier.
+
+So I'll say use existing key stored in Azure.
+
+And I'll pick up the earlier option which is my first VM key.
+
+So this is very very similar to how we have configured things earlier.
+
+Now that we have the basics out of the way, let's go to its networking.
+
+If you scroll down a bit you'd be able to see the network interface configuration.
+
+A network interface enables an Azure Virtual Machine to communicate with the internet, Azure, and
+
+on prem resources.
+
+A virtual machine can have one or more network interfaces.
+
+Basically, a network interface allows your virtual machine to communicate with other networks like
+
+internet or other resources on Azure or on prem resources.
+
+We would want to do a little bit of configuration on this network interface.
+
+I'll click the edit icon which is present in here.
+
+So edit network interface.
+
+Over here what we want to do is to allow inbound traffic.
+
+So public inbound ports, I want to say allow selected ports and go ahead and select the ports HTTP
+
+and SSH.
+
+So I'll allow inbound traffic on those two ports.
+
+And I would also want to allow creation of public IP addresses.
+
+So I'll say public IP address enabled.
+
+So these are two important things that we are doing in here.
+
+We are saying allow selected ports and we chose 80 and 22.
+
+That's HTTP and SSH.
+
+And we also enabled public IP addresses.
+
+Once you do that you can say okay.
+
+After that we would want to go ahead and create a load balancer.
+
+We are creating multiple virtual machines.
+
+Whenever a request comes, we would want to load balance the requests between the multiple VMs.
+
+That's where we would want to create an Azure load balancer.
+
+And over here we don't have an existing load balancer.
+
+So what we would choose to do is to create a load balancer.
+
+You can go ahead and say create a load balancer.
+
+The first thing we need to configure is the name.
+
+So I'll call this VM scale set.
+
+Oops.
+
+Let's get this right VM scale set one hyphen ELB.
+
+I don't want a public load balancer.
+
+I'll take the defaults for the rest of the things.
+
+And I would say create.
+
+Is that all?
+
+There is just one more thing that you would want to configure that's basically in advanced tab.
+
+So you need to go to the advanced tab.
+
+And what do you want to configure in the advanced tab.
+
+Yep.
+
+This is exactly the same thing that we configured earlier.
+
+We want to configure custom data.
+
+You'd want to install.
+
+We want to install nginx and set it up.
+
+So I'll copy the same things from earlier in here.
+
+So this is the same script that we used earlier as well.
+
+This looks good.
+
+Let's go ahead and say review and create.
+
+Azure is doing the final validation.
+
+The validation has passed.
+
+It took about a few seconds and we are all set.
+
+So we are creating two instances.
+
+We are making use of my first VM key as the key pair.
+
+We have configured to use load balancing and we have configured cloud init information.
+
+Let's go ahead and say create.
+
+The creation of the virtual machine scale set would take a while.
+
+We are creating a couple of virtual machines.
+
+In addition a load balancer is also being created.
+
+So the creation of this would take a little while.
+
+What I would recommend you to do is to take a break, grab a coffee and I'll see you on the other side.

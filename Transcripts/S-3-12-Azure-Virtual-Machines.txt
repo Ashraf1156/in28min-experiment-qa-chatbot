@@ -1,0 +1,15 @@
+Welcome back. Welcome to my favorite section of this course, Azure Virtual Machines. You'd want to deploy applications in the Cloud, where do you deploy them to?
+
+One of the easiest ways is to use Azure Virtual Machines to create a Virtual Machine and connect to the Virtual Machine and deploy software to it, and that's what we would be doing in this specific section.
+
+In the initial steps, you'll understand the basics of Azure Virtual Machines. You'll create your first Virtual Machine and you'll learn how to run commands against Virtual Machines. You'll also learn how to install a Web server, nginx on the Virtual Machine we create and we'll also learn how you can automate the installation of software on a Virtual Machine.
+
+Once we are familiar with the basics, we would switch our attention to having multiple Virtual Machines running. It's not sufficient in most scenarios to have just one VM. We'd want ten or hundred VMs. How do you simplify the creation of hundreds of Azure VMs?
+
+That's where we would be talking about Availability Sets, Scale Sets, and we'll also understand how to load balance between them using Azure Load Balancing.
+
+At the end of this section, we would look at some of the best practices related to Azure VMs.
+
+I'm all excited to help you create your first Virtual Machine and let's get started right away.
+
+I'll see you in the next step.

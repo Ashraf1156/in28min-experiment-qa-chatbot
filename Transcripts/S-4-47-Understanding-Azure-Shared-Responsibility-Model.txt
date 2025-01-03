@@ -1,0 +1,79 @@
+Welcome back. In this step, let's talk about Shared Responsibility Model. In the last few steps, we talked
+
+about Infrastructure as a Service,
+
+we talked about Platform as a Service, Software as a Service,
+
+and the other deployment model which is present is On-prem;
+
+you deployed the software completely on-premises.
+
+What are the responsibilities in different models?
+
+That's what we'll be looking at right now.
+
+If you have your applications deployed On-prem, then you are responsible for all the different things
+
+which you see in here.
+
+You are responsible for your data center, the network, and the physical host.
+
+You are responsible for the security of all these as well.
+
+You are responsible for operating system,
+
+the applications. You are, you are responsible for accounts and identities, devices, and your
+
+information and data.
+
+One important thing that you are observing in here is in all the models, whether it's Software as a
+
+service, Platform as a Service, or Infrastructure as a Service, you are responsible for your devices,
+
+your accounts, and your information.
+
+The ownership of all these is always with the customer.
+
+However, when you move to the cloud, when you are making use of IaaS, or PaaS, or Software as a Service
+
+you are no longer responsible for physical host, or physical network, or the physical data center.
+
+All these responsibilities are taken over by the cloud provider, which in this case is Microsoft or
+
+Azure.
+
+When you are using Infrastructure as a Service, you take the responsibility of the operating system,
+
+the network controls, applications, and also the management of identity and directory infrastructure
+
+for your application. When you go for PaaS, you relinquish some of the control over to Microsoft.
+
+You are no longer worried about the operating system at all.
+
+You are only responsible for your application code and a little bit of configuration.
+
+When you're going for Software as a Service, you are only responsible for the configuration of your
+
+identity,
+
+who is going to use this
+
+software. All the rest of the things are taken care of by the cloud provider.
+
+So, you can see that whenever you are On-prem, everything is your responsibility.
+
+However, when you're moving things to the cloud, when you're going for IaaS, or PasS, or Software
+
+as a Service, you're moving towards a shared responsibility model.
+
+Some of the things are responsibility of the cloud provider, which is Microsoft.
+
+Some of the things are responsibilities of yours,
+
+who's the customer.
+
+The idea behind this step is to get a 10,000 feet overview around the shared responsibility model.
+
+I'm sure you're having a wonderful time and I'll see you
+
+in the next step.

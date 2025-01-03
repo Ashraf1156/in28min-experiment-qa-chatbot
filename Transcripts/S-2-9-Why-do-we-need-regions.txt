@@ -1,0 +1,25 @@
+Welcome back.
+
+Earlier, when we talked about the cloud, we talked about the fact that you can "Go global" in minutes. You can deploy applications to different parts of the world within minutes, if you are using the Cloud.
+
+Now, how can you do that? The most important concepts that enable us to do that are Regions and Zones, and in this step, let's focus on understanding why we need Regions and Zones.
+
+Let's take a simple example and discuss that further. So, imagine that your application is deployed in a data center in London. You have a corporate data center in the London region, and you have an application deployed in there. Let's say your users are distributed globally, what would be the challenges?
+
+The number one challenge would be slow access for users from other parts of the world. So, if I'm accessing this application, let's say, from Sydney or let's say I'm accessing it from Mumbai or Chennai or New York, the application will be a little slow. This is also called high latency. So, we will have high latency for users from other parts of the world.
+
+Number two, let's imagine the scenario where this data center crashes, and because we just have one instance of the application, the application is no longer available. So, the application goes down. So, the application has low availability.
+
+Now, think about this, what can we do to improve this situation? Let's add one more data center in London, right. So, I have one data center in London, I'll add one more. So, we have Corporate Data Center 1 and Corporate Data Center 2.
+
+Now, think about this, what were the challenges now? Let's talk about the challenge one, slow access for users from other parts of the world. This challenge still remains. No change as far as challenge one is concerned. Challenge two, what if one data center crashes is solved, why? Because if one data center crashes, your application is still available from the other data center. So, that's cool, right? So, that's one challenge we made progress with.
+
+However, what if the entire region of London is unavailable? So, if this entire region of London is unavailable, what happens? Your application goes down. Now we think a lot and come up with a better solution. What do we do? We add a new region. We add a new region, Mumbai.
+
+So, we have a London region, we have a Mumbai region, and each of these regions has two different data centers. Now, think about our challenges. Challenge one is partly solved. At least the users who are nearer to Mumbai get faster access to the application. Actually, you can completely solve the challenge one by adding deployments for your application in multiple regions around the world. So, you can add a deployment in Sydney, New York, and the rest of the world, maybe somewhere in the Middle East, somewhere in Africa, somewhere in South America. So, you can add deployments everywhere and solve this challenge.
+
+Challenge two, what if one data center crashes? That is already solved. What if the entire region of London is unavailable, what would happen? Your application is now served from Mumbai. So, challenge three is now solved.
+
+So, by having multiple regions and having multiple data centers in each of these regions, we can provide high availability to the user. The other thing which will also improve is the latency. Users who are nearer to each of these regions can get faster access to these applications and that is the reason why each of the Cloud providers provide concepts called Regions and Zones.
+
+In this step, we understood the need for Regions and Zones. Let's discuss more about it in the next step.

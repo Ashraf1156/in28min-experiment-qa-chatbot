@@ -1,0 +1,27 @@
+Copy the commands needed for the next lecture
+WHAT ARE WE GOING TO DO?
+
+We will execute a few LINUX commands in the next step! Some of these commands will be long and difficult to type!
+
+
+
+WHAT SHOULD YOU DO?
+
+Keep these commands handy for subsequent steps.
+
+
+
+RECOMMENDED:  Copy the commands into notepad or any text editor for easy reference and execution
+
+
+
+sudo su
+apt-get -y update
+apt-get -y install nginx
+echo "Hello World"
+echo "Getting started with Azure Virtual Machines"
+ 
+hostname
+echo "$(hostname)"
+echo "Welcome to in28minutes $(whoami)" > /var/www/html/index.html
+echo "Welcome to in28minutes $(hostname)" > /var/www/html/index.html

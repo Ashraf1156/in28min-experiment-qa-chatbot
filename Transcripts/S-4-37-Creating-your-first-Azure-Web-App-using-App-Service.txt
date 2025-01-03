@@ -1,0 +1,69 @@
+In this step, let's quickly create a App Services Instance.
+
+So, let's go ahead and choose App Services,
+
+and this is where we can go ahead and say Create. So,
+
+I would want to create a App Service Instance, I would want to create a Web App.
+
+I can choose the Subscription as Free Trial. The resource group, I would choose is compute resource group.
+
+The first thing that you'd need to configure is a name for the Web App.
+
+What I would need to do, I would say my-first-web-app
+
+and you can see that the name is not available, you have to make it unique.
+
+What I would do is, I would add in in28minutes to make it unique.
+
+Now, web apps allow you to deploy code as well as Docker container. So, you can either say Code and
+
+choose which kind of code you'd want to deploy; you'd want .NET, or ASP, or Java.
+
+So, you can choose whichever one you'd want to make use of or you can make use of a Docker container.
+
+So, if you have a pre-built Docker container which is available, you can make use of it and you can run it on Web App.
+
+What I would do is, I would make use of Docker container for now and I would choose operating system
+
+as Linux.
+
+I would choose the region as Central US. As we discussed earlier, whenever we are creating a App
+
+Service Web App, you need to associate it with a App Service Plan. The App Service Plan decides what kind
+
+of hardware is used to run your applications.
+
+It decides the compute resources, the features, and the cost as well.
+
+What we'll do now is create a new App Service Plan,
+
+and what we'd do is we would choose Basic B1, which is the default plan which is suggested in here.
+
+I'd go ahead and say
+
+Next.
+
+Instead of deploying a custom container, what we'll do is, we'll use the sample which is provided by Azure,
+
+which is NGINX Server.
+
+Earlier, we were deploying NGINX using a virtual machine.
+
+Right now, we are deploying NGINX again, but this time using App Service. You'd now see how easy it is
+
+to use App Service and deploy NGINX.
+
+What I would do now is go ahead and say review and create.
+
+The validation is in progress,
+
+it would take a little while, I guess.
+
+Okay, it took about 15 seconds, at the end of which I can go ahead and say create a Web App. The creation of
+
+the Web App would take a little while.
+
+What I would recommend you to do is to
+
+take a break and I'll see you in the next step.

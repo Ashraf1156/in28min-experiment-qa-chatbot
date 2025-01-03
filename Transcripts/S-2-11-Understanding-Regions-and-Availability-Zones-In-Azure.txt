@@ -1,0 +1,29 @@
+Welcome back.
+
+In the previous step, we talked about the fact that setting up data centers in different regions around the world is not easy and that's where all the cloud providers, including Azure, provide us with regions all around the world. Azure provides sixty-plus regions around the world which is an ever-expanding list. There are new regions added every year. Azure is the Cloud provider which provides the most number of regions around the world.
+
+Now, what is a region? A region is nothing but a specific geographical location where we can host our resources. You can decide, I'd want to host my application in Mumbai region or I can say, I'd want to host my application in London region or Sydney region. By having multiple regions around the world, Azure makes it very, very easy for us to deploy applications to these regions.
+
+The important advantage of having multiple regions around the world is High Availability. If you deploy your application to multiple regions around the world, even if one of the regions is down, you can serve the application from the other regions.
+
+Number two is Low Latency. You can serve users from the nearest region to them and therefore they get low latency.
+
+Number three is Global Footprint. A startup in India might be able to easily deploy applications to multiple parts of the world and therefore it can create global applications.
+
+The last advantage is adherence to global regulations. Different countries have different regulations. For example, let's say, United States of America or USA want the data related to all its citizens to reside only within their country. In those kinds of situations, we can create a region in the US and store data related to US customers only in that specific region.
+
+So, regions help us achieve high availability, low latency, global footprint, and help us to adhere to Government regulations.
+
+What is the need for Zones? How do you achieve high availability in the same region? That's where Availability Zones are very useful.
+
+Azure provides multiple Availability Zones in some of the regions. Each Availability Zone is one or more discrete data centers. Each Availability Zone has independent and redundant power, networking, and connectivity. So, the chance that two Availability Zones simultaneously fail is very, very rare.
+
+All the Availability Zones in a region are connected through low-latency links. So, you'll not have a high-performance impact when you deploy applications across multiple Availability Zones.
+
+The biggest advantage of having multiple Availability Zones is increased availability and fault tolerance within the same region. Even if one of the data centers completely fails, your application will still be available if you are deploying to multiple Availability Zones.
+
+One of the most important things to remember is that not all Azure regions have Availability Zones. Some of the Azure regions have no Availability Zones at all. Some of the Azure regions have three Availability Zones.
+
+Let's look at a few examples of Regions and Availability Zones. East US has three Availability Zones. West Europe has three Availability Zones as well. Southeast Asia, Asia Pacific has three Availability Zones. Brazil South has three Availability Zones as well. West Central US has zero Availability Zones. As you can see, Azure offers a number of regions around the world and some of them have Availability Zones and some of them do not have Availability Zones.
+
+In this step, we got introduced to the concept of Regions and Zones. I'll see you in the next step.

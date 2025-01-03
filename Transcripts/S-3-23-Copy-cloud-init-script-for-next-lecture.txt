@@ -1,0 +1,22 @@
+Copy the cloud init script needed for the next lecture
+WHAT ARE WE GOING TO DO?
+
+We will simplify installation of software on the VM in the next step!
+
+
+
+WHAT SHOULD YOU DO?
+
+You need this script in the next step!
+
+
+
+RECOMMENDED:  Copy the script into notepad or any text editor for easy reference and execution
+
+
+
+#!/bin/sh
+sudo su
+apt-get -y update
+apt-get -y install nginx
+echo "Welcome to in28minutes $(hostname)" > /var/www/html/index.html

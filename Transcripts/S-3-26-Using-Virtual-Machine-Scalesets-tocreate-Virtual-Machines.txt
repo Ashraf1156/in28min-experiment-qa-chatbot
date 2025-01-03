@@ -1,0 +1,90 @@
+Transcript
+In the last few steps we have created a couple of virtual machines.
+
+We created them one by one.
+
+What if I would want to create ten virtual machines?
+
+Or I would want to create 100 virtual machines?
+
+I don't want to create them one by one.
+
+How can I create them as a group?
+
+That's where a concept of scale set comes into picture.
+
+In this step, let's explore the concept of a scale set.
+
+What is a virtual machine scale set?
+
+How do you simplify creation and management of multiple virtual machines?
+
+That's where we would go for virtual machine scale sets.
+
+It allows you to create and manage a group of virtual machines.
+
+It provides you high availability to your applications.
+
+If instead of one VM you have multiple VMs, the chance that your application is highly available is
+
+very high.
+
+In addition to creating multiple VMs, you can also add a load balancer when you're creating a virtual
+
+machine scale set.
+
+If I'm having multiple virtual machines and a user request comes in, I would want to be able to distribute
+
+the requests among all the available virtual machines.
+
+That's what a load balancer allows us to do.
+
+In addition, you can also distribute VM instances across multiple availability zones.
+
+So when you are creating a virtual machine scale set, you can say I would want my instances in availability
+
+zone one, zone two, and zone three as well.
+
+This would ensure that the instances are distributed across multiple availability zones.
+
+And even if one of the availability zones is not available, your application can still be served from
+
+the other availability zones.
+
+Virtual machine scale sets also support manual scaling and auto scaling.
+
+You can say I would want to create five instances a A little later you can say, I would want to increase
+
+the number of instances to seven, or you would want to decrease the number of instances to three.
+
+This is what is called manual scaling.
+
+You can also do auto scaling based on the number of requests received.
+
+Based on CPU utilization of your virtual machines, you can automatically increase the number of instances
+
+and automatically decrease the number of instances as well.
+
+And using virtual machine scale sets, you can create up to 1000 VM instances.
+
+So if you want to create a group of virtual machines together and you want to manage them together,
+
+that's when you would go for virtual machine scale set.
+
+When you're creating a virtual machine scale set, you will have the option of adding a load balancer.
+
+The load balancer would distribute the incoming requests between the existing VMs.
+
+You will also have the option of distributing the VMs across multiple availability Zones and virtual
+
+Machine scale sets also have the option of auto scaling based on CPU utilization or any other metric.
+
+You can automatically increase the number of instances or decrease the number of instances.
+
+In addition, you also have the option of manual scaling.
+
+Basically, you can say I want ten instances and at a later point in time you can increase it to 15
+
+or decrease it down to seven.
+
+All this can be manually done as well.

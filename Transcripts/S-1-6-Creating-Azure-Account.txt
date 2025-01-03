@@ -1,0 +1,34 @@
+Are you excited to start creating resources in the cloud? You'd need an Azure account. Let's see what's involved.
+
+Are you excited to get started with the cloud? Here are some of the things you will need:
+- Your email address
+- Your mobile phone details
+- Your personal details including your address and a valid debit or credit card.
+
+Azure would verify your email, your mobile phone, and your debit or credit card details. It might even do a test transaction to make sure that it is valid. Now, why is Azure going through all this? Azure is providing you access to powerful infrastructure, and they want to be really, really sure who you are. The account creation process is a little tedious, so have a little bit of patience. Once you have the Azure account, you'll be able to do a lot of magic with it.
+
+The first step in creating an Azure account is to search for "Azure Free Trial." You'd see results like this. What you can do is to take this link: "Create your Azure Free account today." If you click that link, you would land on a page where you can start the free account creation process. You can click the "Start Free" button. 
+
+Once you click "Start Free," you'd be taken to the sign-in page. Since you don't have an Azure account yet, go ahead and create one. Click "Create One," and this would take you to the page where you can start the account creation process. This is where you would enter your valid email. If you have a Gmail account, this is where you would enter it. You can also set the password for that specific account.
+
+Next, Azure might also ask you for your birth date and your country. Go ahead and enter those details and click "Next." Once you enter these details, Azure would send a verification email to your email address. If you check your email, you would see an email with a code. Take the code from your email and enter it in the required field, then click "Next."
+
+On the next screen, Azure might check that you are not a robot, so it might ask you to do a few simple exercises. Once you go through those exercises and prove that you are human, you can continue to the next steps. 
+
+On the next screen, you'd be asked for your personal details, including your country, first name, middle name, last name, email address, and phone number. You're also expected to verify your phone. Once you enter the phone number, you can use "Text Me" or "Call Me" to verify your phone number. Azure would deliver a verification code to your phone number, which you are expected to enter on the screen to verify.
+
+After verifying your mobile number, you can enter your organization details and your address details. If you are a student, you can enter your college or school name as the organization. After filling in all the details, you have a couple of checkboxes to review:
+- Read the subscription agreement and offer details. Make sure you are okay with it and check the checkbox beside it.
+- If you want Microsoft to share your information with select partners, you can also check this checkbox (optional).
+
+After that, click the "Next" button, and you will get into the card verification steps. This is where you would need to provide the details of a credit card or debit card. Azure will make a temporary authorization on this card but won't charge you unless you move to pay-as-you-go pricing. All the resources you create initially will be part of the free trial. Unless you explicitly move to pay-as-you-go, Azure will not bill you. On the screen, you can enter your card details, cardholder name, card number, expiry date, CVV, and the address details associated with your card. Azure might perform a test transaction against your card.
+
+Once all this is complete, you can click "Sign Up." Creating an Azure account is a tedious process, but it's very important to remember that Azure is providing you access to very powerful services and wants to be sure who you are. Once the sign-up process is successful, you should see a message: "You are ready to get started with Azure." You can go to the Azure portal by clicking the button, which takes you to the Quickstart Center of the Azure portal. Congratulations on successfully creating your Microsoft Azure account!
+
+Now, a quick word of warning. Before we proceed to the next step, remember that with the Azure account you have created, you get access to certain services for free for 12 months and 55+ other services that are free always. However, this is restricted access. You won't get all the features of all services—just restricted access. Additionally, with the free trial account, you get USD 200 as your credit. This USD 200 Azure credit allows you to do much more than what the free access permits. 
+
+It's important to note that the $200 credit has a constraint: you only have 30 days to use it. If you don't use it within 30 days, the credit expires. My recommendation would be to try and complete this course within 2 to 4 weeks to make the best use of the Azure credit.
+
+I'm sure you are all excited to play with Azure. I will see you in the next step.
+
+RESOURCE: https://scribehow.com/shared/Creating_Microsoft_Azure_Account__7DG9fgobQjSwqykdHBQfDw

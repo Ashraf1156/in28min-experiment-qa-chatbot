@@ -1,0 +1,186 @@
+Transcript
+In the previous step, we kickstarted the creation of a scale set and I saw that the deployment was
+
+complete.
+
+It took about five minutes for the deployment to be complete, and we are now ready to go to the resource.
+
+So let's go to the resource.
+
+The resource which we have created is a VM scale set.
+
+You can see that this VM scale set also has a public IP address.
+
+You can see that the status is two out of two succeeded.
+
+That basically means two instances are successfully created.
+
+Now how can you see the instance information?
+
+You can go over to instances in here.
+
+If you go over to instances, you can see that there are two VM instances which are created in here.
+
+You can see that the first instance has number zero at the end, and the second instance has number
+
+one at the end.
+
+And if you go into this specific instance, you can see that this also has a public IP address.
+
+If you copy the public IP address and go over to the specific instance and say enter, make sure that
+
+you're using HTTP and not Https.
+
+And then you should see something like this come up.
+
+Welcome to in 28 minutes VM scale 000000.
+
+So this is the name of the virtual machine.
+
+And that's what we are seeing in here.
+
+If you don't see this message, make sure that you're using HTTP.
+
+If you're using HTTP and still don't see this specific message, wait for a few minutes and it should
+
+be fine.
+
+I'll close this out.
+
+And if I go back to the scale, set instances and go to VM scale.
+
+Set one one.
+
+And go over to the public IP address and 21 148 176.
+
+You can see that this is showing VM scale 000001.
+
+And this is the name of the second instance which is present in here.
+
+If I go back to the VM scale set instances, you can also see that there is load balancing in here.
+
+So if you go to load balancing in here.
+
+You would see that a load balancer is also configured for us.
+
+You can see the IP address of the load balancer.
+
+So you can also copy this.
+
+So for 147 136 175.
+
+If you go and type in that IP address for 147 136 175, you would see that it would route the request
+
+to one of the virtual machines in the background.
+
+So the request is going into 501.
+
+If you see the request hanging, it might be because you're using Https.
+
+So make sure that you're using HTTP.
+
+Even after trying multiple times I saw that all the requests were going to 0001, and none of the requests
+
+were going to 0000.
+
+This is because some of the times your browser would cache the requests.
+
+And how do we avoid the browser cache?
+
+Let's fire the request from command line.
+
+How can I fire the request from command line?
+
+I can go and open up Cloud Shell so I can go in here.
+
+Click Cloud Shell.
+
+So this is opening up Cloud Shell.
+
+And from here I can send a request.
+
+Let's do a clear so that we can see the command clearly in here.
+
+Let's maximize this.
+
+And if you want to send a request to a URL.
+
+So I want to send a request to this URL.
+
+The command in Linux is curl curl http colon slash slash and the IP address.
+
+So this would send a HTTP request to this specific IP address.
+
+This is like launching something in the browser.
+
+This would actually get the HTML response and show it here.
+
+So you can see that the first response is coming back from VM scale 0001.
+
+The next one is coming from 0000.
+
+If you keep fighting it multiple times, you would see that you would get the response back from one
+
+of the active instances.
+
+So I'll minimize this.
+
+I'll say restore.
+
+And let's go back to instances.
+
+You can use one of these instances and say delete.
+
+So this action will delete the instances including their disks.
+
+You want to delete the selected instances I'll say yes apply force delete.
+
+Yes please.
+
+So this instance is in a state of deleting right now.
+
+And if I maximize this and do a curl in here, you can see that all the requests would start coming
+
+only from the second instance.
+
+So you can see that all the requests are being handled by the second instance only.
+
+And if I minimize this after a while, you would see that the virtual machine instance is deleted.
+
+And right now there is only one virtual machine instance in here.
+
+If you want, you can increase the number of instances as well if you type in scaling in search.
+
+So there is a menu item called scaling.
+
+You can either type scaling in here or take the difficult way which is to scroll down here slowly.
+
+And over here you would you'd see scaling.
+
+So you can go to scaling.
+
+And you can say I want to manually scale.
+
+And I can also increase the number of instances.
+
+Let's say I would want to create 10 or 100 instances.
+
+You can increase the number of instances in here as well.
+
+In this step we looked at virtual machine scale sets.
+
+If you want to create hundreds of similar virtual machines, VM scale sets simplify the entire process.
+
+VM scale sets provide high availability to your application.
+
+You can also add in a load balancer.
+
+The load balancer would automatically distribute the load between the active instances using a Virtual
+
+Machine scale set.
+
+You can also distribute instances across multiple availability zones.
+
+VM scale sets also support manual scaling and auto scaling as well.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.

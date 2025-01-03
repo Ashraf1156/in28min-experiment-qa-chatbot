@@ -1,0 +1,89 @@
+In the previous step, we started creation of our App Service. If I go to App Services, I can see that the App Service
+
+that we created is up and running. Let's go in and over here, you can see the URL. Let's copy the URL
+
+and type it in. Within a minute or so,
+
+you should see this come up.
+
+Your app service is up and running.
+
+You can see that it's very, very easy to deploy an application using App Service.
+
+Similar to virtual machines, you have Activity log, where you can look at all the activity that is performed
+
+inside your
+
+App Service.
+
+If you type scale in here, you'd be able to look at Scale out.
+
+This is where you can go in and you can increase the number of instances.
+
+You can say, let's say, I would want to have two instances or three instances.
+
+So, let's say I would want to have two instances. All that
+
+I would need to do is to go ahead and say Save.
+
+So, this would increase the number of instances to two.
+
+So, this is Scale out where we are increasing the number of instances.
+
+In addition to Scale out, you can also do a Scale up, that's basically changing your
+
+App Service Plan.
+
+The App Service Plan is the thing which decides the hardware that is associated with your virtual machine.
+
+You can see that we have chosen a B1 plan which gives us 1.75 GB memory
+
+and there are a specific set of features which are included in here.
+
+You can see that this specific plan gives you manual scaling.
+
+However, if we'd want to run production workloads, you might want to go with Production App Service plans.
+
+You can see that these plans give you more memory and also more features.
+
+So, with a production plan. So, let's say if you'd go for this particular one, in that kind of scenario,
+
+you can also do auto-scaling.
+
+You'll also be able to create multiple environments.
+
+So, not just a single environment, you can create a Dev, QA, Stage, and Production environments and you can
+
+deploy applications to them.
+
+You also get daily backups. As you can see, as you Scale up, as you change the plan for your App Service,
+
+you would get more features, and you'd get more hardware.
+
+This is common across most Platforms as a Service offerings.
+
+You cannot access the virtual machines which are present underneath, but you can configure how much
+
+hardware you want.
+
+Over here, we are changing the amount of memory that we would want.
+
+We are also configuring how many instances we would want to run.
+
+We are configuring what kind of features we would want.
+
+So, with Platform as a Service, you cannot change the underlying hardware, but you can change the configuration
+
+that is related to this specific hardware needs of a specific application. Similar to virtual machines,
+
+if you go to Overview and scroll down, you can see the utilization, you can see the CPU Percentage
+
+utilization, Memory Percentage, Data In, Data Out;
+
+all the metrics are coming in here.
+
+These metrics are being tracked by Azure monitoring. In this step, we got a 10,000 feet overview of
+
+the App Service.
+
+I'm sure you are having a wonderful time and I'll see you in the next step.

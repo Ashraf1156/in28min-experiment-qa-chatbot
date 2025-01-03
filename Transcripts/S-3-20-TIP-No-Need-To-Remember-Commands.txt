@@ -1,0 +1,34 @@
+Transcript
+A quick word of warning before we get into the next step.
+
+In the next step, we would be installing a web server called nginx.
+
+We would want to install this nginx on our virtual machine, and we would want to launch up a simple
+
+web page on nginx.
+
+And to do this, we would need to execute a lot of complex commands.
+
+If you are not familiar with Linux, a lot of these commands might seem really, really complex.
+
+A very, very important thing to remember is that you don't really need to remember any of these commands
+
+for the exam.
+
+All that you need to understand is a high level overview of what we are doing in here For each of the
+
+commands that we will be executing, we will give you a proper explanation, but there is no need to
+
+get tensed about remembering these commands because you don't really need to remember them.
+
+We are also making these commands available in the next step.
+
+So what you can do is to copy the commands and have them handy so that you can copy them and execute
+
+them whenever you need to.
+
+At in 28 minutes, our goal is to make things as easy as possible for you, and I'm sure you are having
+
+a great learning experience until now.
+
+I'll see you in the next step.

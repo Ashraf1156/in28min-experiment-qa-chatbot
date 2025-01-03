@@ -1,0 +1,23 @@
+In the next few steps, we will be talking about virtual machines.
+
+To understand virtual machines, you need to understand a concept called virtualization. What is it and why is it needed?
+
+Typically one physical server has CPUs. It has memory attached to it. It may be some kind of Ram, and it has some kind of storage or hard disk attached with it.
+
+In the earlier days of enterprises, one application was deployed on one physical server. So if you have a physical server with CPUs, memory, and storage, the entire physical server was dedicated to one application and this resulted in underutilized resources. This results in high inefficiency and higher costs.
+
+How about utilizing this physical server in a better way? That's where the concept of virtualization comes in.
+
+Virtualization helps you to run multiple virtual machines on a single physical server. Each of these virtual machines might be running their own applications. They all run on a single physical server, and this is managed by a software called hypervisor.
+
+So the software allows you to run multiple virtual machines on a single physical server. And this concept is called virtualization. You are running virtual machines on a physical server.
+
+The result is improved resource utilization by sharing hardware resources. The hardware resources are shared between all these virtual machines and thereby we get improved resource utilization. It also gives you flexibility. You can easily create, modify, and move the virtual machines based on your needs.
+
+And this concept of virtualization is one of the fundamental things behind the evolution of cloud computing. So this is the foundation of cloud services like AWS, Azure, and Google Cloud.
+
+In the next step, we'll be exploring the virtual machine services in the cloud. Before that I just wanted to introduce you to the concept of virtualization. This is basically using a software called hypervisor to enable you to run multiple virtual machines on a single physical server.
+
+That's what virtualization is.
+
+I'm sure you're having a wonderful time and I'll see you in the next step.

@@ -1,0 +1,65 @@
+Welcome back. In this step, let's get started with Serverless. You would have heard this term a number
+
+of times.
+
+So, what is serverless, when do you go for serverless?
+
+What do you think about when we develop an application? In addition to choosing the language or the framework
+
+that you would want to develop the application with,
+
+you would also start thinking about where to deploy the application?
+
+What, what kind of operating system should I deploy my application into?
+
+How should I take care of scaling, availability, and all the non-functional features around my application?
+
+What if you don't really need to worry about servers, server configuration, scaling, availability, and you can
+
+just focus on your code and your application?
+
+That's serverless. A important thing to remember is serverless does not mean no servers. Even when you are
+
+using serverless,
+
+you are using servers in the background. The only difference is that the servers are not visible to you.
+
+You do not have any visibility into the servers on which your code is running.
+
+Now, what is serverless
+
+for me? The important characteristics of serverless for me are; number
+
+one, you don't worry about infrastructure.
+
+So, you'd have zero visibility into the infrastructure where your application is running.
+
+You don't know which server is being used to run your application and you get flexible scaling and automated
+
+high availability for free.
+
+And another important characteristic of serverless for me is Pay for use. Ideally, if there are no requests
+
+for your service, you should pay zero cost.
+
+So, serverless is all about allowing you to focus on code and the cloud-managed service taking care of everything
+
+that is needed to scale your code to serve millions of requests.
+
+And in addition, when you're using serverless, you pay for requests and you don't pay for servers.
+
+So, you pay for number of invocations of your function or number of invocations of your application,
+
+and you don't pay for how many servers are used to deploy your application.
+
+Now, what are the examples of serverless services?
+
+Good examples are all the function as a service services. AWS Lambda in AWS, Azure functions in
+
+Azure, and Google functions in Google Cloud Platform. In this step, we got a 10,000 feet
+
+overview of serverless.
+
+We'll talk more about serverless as we go further in the course.
+
+I'm sure you're having an interesting time and I'll see you in the next step.

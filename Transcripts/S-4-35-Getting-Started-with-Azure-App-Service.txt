@@ -1,0 +1,151 @@
+Welcome back.
+
+Welcome to the section on Managed Services with a specific focus on the compute services. In the previous section,
+
+we saw how we can deploy applications using virtual machines, how we can scale them using scale sets,
+
+and how we can load balance between them with load balancing.
+
+Setting all that up is not easy.
+
+How can we simplify that?
+
+That's what we'd be focusing on in this specific section.
+
+Do you want to continue running applications in the cloud, the same way you run them in your data center
+
+or are there any other approaches? Before we start looking at the different approaches,
+
+there is a little bit of terminology that you need to understand; Infrastructure as a Service,
+
+Platform as a Service also called PaaS. Infrastructure as a Service is also called IaaS, SaaS or Software as a
+
+Service, Serverless. In this step,
+
+let's get started with IAAS - Infrastructure as a Service.
+
+What is Infrastructure as a Service? Using only infrastructure from the cloud provider.
+
+A good example is using a VM, a virtual machine, to deploy your application or your database.
+
+When you're using Infrastructure as a Service, you are responsible for the application code or application
+
+runtime.
+
+You are responsible for configuring load balancing.
+
+You are responsible for configuring auto-scaling.
+
+You are responsible for OS upgrades and patches.
+
+You are responsible for availability and a lot of other things.
+
+The cloud provider is only responsible for the physical hardware, networking, and the virtualization
+
+of the hardware.
+
+The way we set up NGINX on virtual machines in the previous section is a good example of Infrastructure
+
+as a Service.
+
+Let's consider a simple example.
+
+Let's say I would want to run a Java application.
+
+What I can do is, I can create a virtual machine.
+
+Let's say I'm choosing Linux as the OS.
+
+I would need the runtime, which is Java. Let's say, I'd go ahead and install Java on the OS, and after that
+
+I would go and deploy the application.
+
+So, I'm responsible for all these.
+
+I'm also responsible for configuring load balancing.
+
+I'm also responsible for configuring auto-scaling, and any other changes that I would want to do on OS,
+
+and the application runtime.
+
+All that the cloud service provider is providing me with is the virtualization around the hardware. So,
+
+we can go into Azure virtual machine and say I would want to create a VM.
+
+So, this virtualization is provided by the cloud provider.
+
+We don't really need to worry about the physical hardware, but other than that, all the other things
+
+are our responsibilities.
+
+This is what is called Infrastructure as a Service.
+
+The next step up from Infrastructure as a Service is something called Platform as a service.
+
+Over here, you'd be using a platform provided by the cloud provider.
+
+When you're using Platform as a Service, the cloud provider is responsible for operating system, including
+
+patches and upgrades, application runtime, auto-scaling, availability, load balancing.
+
+You are only responsible for configuration of the application and services.
+
+You are responsible for the application code. Let's consider an example, I would want to use a Platform
+
+as a Service to deploy a Java application. In that kind of situation,
+
+only the application configuration and application code will be my responsibility.
+
+What I would do is, I'd tell the cloud provider,
+
+hey, this is the code I would want to run,
+
+this is the configuration,
+
+you go ahead and run it for me.
+
+You don't really worry about anything else.
+
+You don't want to worry about OS.
+
+You don't want to worry about installing Java.
+
+You'd want all of them to be taken care of by the cloud provider
+
+and that's where cloud providers provide
+
+a number of services that are classified as Platform as a Service.
+
+A good example of Platform as a Service is Azure App Service.
+
+With Azure App Service, you can easily deploy Java applications, or Python applications, or Containers.
+
+You can easily deploy them to Azure with a few clicks of the mouse and you get auto-scaling, availability,
+
+load balancing.
+
+You don't really need to worry about OS or application runtime.
+
+There are also a number of databases which are offered as Platform as a Service. Across different clouds,
+
+there are different databases, different types of databases, relational and NoSQL databases, which
+
+are being offered as Platform as a Service.
+
+With these databases, you don't really need to worry about how to ensure the availability of the database,
+
+how do you ensure that the database automatically scales.
+
+You just worry about creating your tables and you worry about creating your data. Platform as a Service
+
+offerings are not limited to compute and databases.
+
+You have a number of other Platforms as a Service offerings for queues, artificial intelligence, machine
+
+learning, performing operations like metrics, logging, and things like that. We will explore a wide variety
+
+of Platform as a Service offerings in Azure as we go further in the course.
+
+In the next step, let's start with one of the most important ones which is Azure App Service. I'll see
+
+you in the next step.

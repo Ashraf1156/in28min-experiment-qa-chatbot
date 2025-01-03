@@ -1,0 +1,81 @@
+Welcome back. In this step,
+
+let's review some of the things that we have learned about the different Azure Services for Compute. The
+
+first one which we looked at is Azure VMs.
+
+This is Infrastructure as a Service.
+
+You can create Windows or Linux VMs.
+
+You'd go for Azure VMs when you would need complete control over your operating system
+
+or you'd want to run custom software on your virtual machines.
+
+However, the biggest disadvantage of going for Azure VMs is that you need to handle availability,
+
+scalability, load balancing, software or OS update, and things like that.
+
+You need to manage scale sets, load balancers, and things like that.
+
+If you'd want to make things easy for you, you would go for Azure App Service.
+
+This is Platform as a Service. You can deploy web apps, mobile back ends, REST APIs which are created
+
+in different languages.
+
+You can also deploy containers and it provides built-in auto-scaling and load balancing.
+
+The next service which we talked about is related to containers, Container Instances.
+
+This is Platform as a Service.
+
+You can also call it Container as a Service.
+
+Typically, Container as a Service is part of Platform as a Service.
+
+With Azure Container Instances, you can run isolated containers, but it does not offer any complex orchestration
+
+features. With Azure Container Instances,
+
+you don't need to worry about provisioning and managing VMs.
+
+You just configure the software.
+
+You configure what container you want, how you want to scale it, and you'll be able to get up
+
+and running with your containers in a few seconds.
+
+The next service which we looked at is Azure Kubernetes service. It is again Platform as a
+
+Service. It's Container as a Service offering, but it provides powerful container orchestration features
+
+which are typically needed in microservices architectures.
+
+It is a Managed Kubernetes Service.
+
+Azure Service Fabric is again Platform as a Service, Container as a Service container orchestrator solution.
+
+However, it is Microsoft-customized container orchestrator solution.
+
+Kubernetes, on the other hand, is a open-source container orchestrator solution. Azure Service Fabric also is very,
+
+very useful in case of microservices architectures.
+
+You can run Azure Service Fabric anywhere, you can run it on-premises and also in the cloud.
+
+The last thing that we looked at is Azure Functions.
+
+It comes under the category of Serverless. Sometimes
+
+these are also called Functions as a Service, FaaS.
+
+So, this provides compute for event-driven apps.
+
+You can trigger a function on a HTTP call, or when a queue, or when a message is placed on a queue, or on different
+
+other events.
+
+In this step, we looked at some of the important compute offerings in Azure.
+
+I'm sure you are having a wonderful time and I'll see you in the next step.

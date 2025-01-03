@@ -1,0 +1,189 @@
+Transcript
+In the previous step, we saw that we had to SSH into the virtual machine.
+
+We had to execute a number of commands, and only after that we were able to install nginx and get it
+
+up and running.
+
+How do we simplify this?
+
+How do we get this done in an easier manner?
+
+Let's explore that further in this specific step.
+
+And let's go back to virtual machines.
+
+We have earlier created the my first VM.
+
+What we'll do now is to create another VM, but in a much easier way.
+
+Let's go ahead and say Create Azure Virtual Machine.
+
+And I would choose the things that we chose earlier.
+
+So I would take the resource group as compute RG.
+
+So this is a resource group which we created earlier when we created our first VM.
+
+I'll call this my second VM.
+
+So the virtual machine name is my second VM.
+
+You can use the same region that you used earlier when you were creating the first virtual machine.
+
+You can choose the defaults for all the other options over here.
+
+You can see that for this size over here it's available if I change the region.
+
+For example, if I actually go in.
+
+I was just checking this a little while ago.
+
+If I go to East US, I saw that there is no capacity available.
+
+So if you see a message like this, the size is currently unavailable in East US for this specific subscription,
+
+then what I would recommend you to do is to change the region and check.
+
+As of now, when I checked this region, the Australia East had the size B1 as available.
+
+When I choose that, you can see that the message in here disappears.
+
+So this is all good.
+
+What I would want to do is to reuse the SSH public key that we created earlier.
+
+So what I would do is instead of generating new key pair I'll say use existing key stored in Azure.
+
+And let's select the my first VM key that we created in the that we created when we were creating the
+
+first virtual machine.
+
+I'll also select inbound ports HTTP and ssh ssh ssh is selected by default.
+
+I'll also add HTTP in.
+
+All.
+
+This is very similar to what we did when we were creating the first virtual machine.
+
+In addition, what we want to do is to execute a set of commands while the virtual machine is starting
+
+up.
+
+And that's why we are going into the advanced tab.
+
+In the advanced tab, you can configure custom data and cloud init.
+
+So you can configure custom data in here.
+
+Basically you can actually put something in here which will be executed when the VM is started up.
+
+Now what do we want to execute in here.
+
+This set of commands is made available to you in the previous step.
+
+If you go back to the previous step you would see something like this in there.
+
+So this is to say, the first line is to say that we are going to execute a bash script.
+
+The second line is to become a root, the next one is to update the packages and the next one is to
+
+install nginx.
+
+So I'll copy these two at the same time.
+
+And the last one is welcome to in 28 minutes.
+
+And the host name in here.
+
+And we are piping this out to index dot HTML file.
+
+This is very very similar to what we did earlier in the previous step.
+
+You should see this text available.
+
+You can just copy paste it in and you should not have a problem.
+
+As I said earlier, understanding these commands is not really, really important.
+
+What is important to understand is that you can configure custom data, and this script would be running
+
+at startup.
+
+Once you configure custom data, you can go ahead and say review and create enough.
+
+I would go ahead and say create.
+
+So deployment is being submitted.
+
+It will take a couple of minutes I guess, before the virtual machine is ready.
+
+The deployment is now in progress.
+
+Let's wait for the deployment to complete.
+
+Cool.
+
+The deployment is now complete.
+
+So what I can do is I can say go to resource.
+
+So the second VM is now created for us.
+
+It has a public ID.
+
+It has a public IP which is assigned in here.
+
+So let's copy the public IP.
+
+Let's go over and run it.
+
+So 20 .73.212.228 is the public IP that I have.
+
+You might have something different or that you need to do is to take that and put it in the browser.
+
+Sometimes the browsers directly change this to Https.
+
+Make sure that you're not using Https.
+
+Make sure that you're still using HTTP.
+
+So you can say http colon slash slash this if you have a problem.
+
+And still getting that this site can't be reached.
+
+What we would need to do is to wait for a minute or so before this second VM is completely available
+
+for us.
+
+Okay, I refreshed after a couple of minutes and I can see.
+
+Welcome to 28 minutes my second VM.
+
+If you don't see this, make sure that you're using HTTP and not Https.
+
+So it should be http colon slash slash this URL.
+
+That's one mistake.
+
+The other one is to make sure that you wait for sufficient amount of time.
+
+If you wait for 4 to 5 minutes, you should see this come up.
+
+In this step, we looked at how we can simplify the setup of some software on your virtual machine.
+
+Earlier.
+
+We had to SSH into it.
+
+We had to execute a few commands and only then we were able to get the software installed.
+
+But now, by configuring custom data in cloud init, we were able to quickly get it up and running.
+
+All that we needed to do is while creating the virtual machine, we configured custom data and it was
+
+automatically executed at the startup of the VM, and we were able to have our nginx server up and running,
+
+I'm sure having a wonderful time and I'll see you in the next step.
+

@@ -1,0 +1,110 @@
+Transcript
+In this quick step, let's delete our scale set and also create another test VM so that we can use that
+
+in the further steps.
+
+Let's go back to VM scale sets.
+
+What I want to do is to delete this.
+
+So I would say select this and delete.
+
+And I would say apply force delete.
+
+And I would say delete in here.
+
+Now I can go ahead and say delete.
+
+So this will delete all the resources that are associated with this scale set.
+
+Let's go ahead and say delete.
+
+Cool.
+
+It's now executing the delete command on the selected item which is the virtual machine scale set.
+
+Now while that is in progress, what we'll do is we'll go ahead and create a virtual machine instance.
+
+So virtual machines let's go to virtual machines.
+
+You want to create a virtual machine.
+
+Let's choose the resource group as compute RG and I'll call this my second VM.
+
+So we are going to use the same name as the earlier one.
+
+We have earlier deleted the second VM.
+
+So we'll recreate with the same name so that we can use it in the subsequent steps.
+
+I will choose the defaults for the rest of the things.
+
+Um, I'll scroll down further and actually choose the SSH public key source as use existing key stored
+
+in Azure.
+
+Let's choose the my first VM key.
+
+Let's also enable HTTP and SSH ports.
+
+And after that, we would want to go over to the advanced and configure custom data as well.
+
+So I'll copy this, put it in here and I'll remove this line.
+
+So this is exactly how we configured it earlier.
+
+You should find this script in a text lecture in one of the previous lectures as well.
+
+So that's all.
+
+We are all set to create the virtual machine.
+
+Let's go ahead and review and create.
+
+Azure would perform the validation quickly hopefully running final validation.
+
+Okay.
+
+Validation passed.
+
+And we can go ahead and create the virtual machine.
+
+Okay.
+
+The creation of the virtual machine is now kick started.
+
+That's cool.
+
+I'll also make sure that the virtual machine scale set is deleted.
+
+So virtual machine scale sets.
+
+Let's go back.
+
+You can see that the virtual machine scale set is now deleted.
+
+What I noticed was when I went to load balancers.
+
+So if I search for load balancers in here and go to load balancer, the load balancer still existed.
+
+So the load balancer which was created by the scale set was in here.
+
+VM scale set one ELB.
+
+So what I would want to do is to go ahead and delete this as well.
+
+So let's go inside.
+
+And say delete.
+
+Let's go ahead and delete the load balancer.
+
+This would delete the load balancer for us.
+
+So what we have done is to delete the scale set the load balancer.
+
+And we have created our second VM again.
+
+I'm sure having a wonderful time.
+
+And I'll see you in the next step.

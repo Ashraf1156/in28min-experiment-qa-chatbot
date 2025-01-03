@@ -1,0 +1,12 @@
+Be careful about an Azure Bug
+In the next step, we use machine size B1S.
+
+I'm receiving feedback that this machine size is NOT available in all regions(In spite of promises from Azure that B1S is the recommended free tier machine size).
+
+A couple of regions which learners had success with - Central India, Australia East.
+
+All updates will be available here - https://www.udemy.com/course/azure-certification-az-900-azure-fundamentals/learn/#questions/17155278/
+
+
+
+Ranga

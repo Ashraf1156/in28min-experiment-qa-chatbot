@@ -1,0 +1,15 @@
+COURSE FAQ : Do NOT worry about Subscription Name
+👉 FAQ 1: Azure subscription 1
+1. Hello Ranga! I am enjoying the course so far but in Chapter 10. Step 2, Creating a VM, unfortunately I am seeing only the 'Azure subscription 1' even though I have signed up for an a Azure free account. Please help in this case.
+
+2. Is "Azure Subscription 1" the same as "Free Trial" subscription?
+
+
+
+👉 SUMMARY
+If Azure subscription 1 is your ONLY subscription, it should be a Free Trial subscription.
+
+
+
+👉 OFFICIAL ANSWER
+https://learn.microsoft.com/en-us/answers/questions/999643/is-azure-subscription-1-the-same-as-free-trial-sub

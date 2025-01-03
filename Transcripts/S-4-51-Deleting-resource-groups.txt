@@ -1,0 +1,45 @@
+Welcome back. In this step, let's delete all the resources that we have created earlier.
+
+I'll choose the compute-rg or you can type in compute-rg and select the resource group.
+
+And we have created all the resources in this specific resource group.
+
+And therefore, what I can do is to just delete the resource group and everything else that is underneath the
+
+resource group would be deleted.
+
+You can see that there are a lot of resources that we created as part of this resource group.
+
+So, all of them would be deleted as soon as this resource group is deleted.
+
+That is one of the biggest advantages of creating a resource group.
+
+Everything is created under the same resource group and you'd see that most of the services create a number
+
+of resources and deleting them individually will be very, very tough.
+
+And that's where, if you group everything as part of a single resource group, you can easily manage
+
+them.
+
+You can manage the lifecycle of them.
+
+And when and when you're done with using them, you can delete them easily as well.
+
+So, I've typed in the resource group name here and I'm going to say Delete and this would delete all the things
+
+that we have created during the compute section of this specific
+
+course. Whenever we are using the cloud,
+
+it's very, very important to ensure that you are making efficient use of the cloud resources.
+
+Right now we are in the free tier, so you might not be really paying for the usage of the cloud,
+
+but deleting resources that you don't need in the cloud is a very good habit to get into.
+
+What I would recommend you to do is at the end of every learning session, I would recommend you to
+
+delete all the resources and create them again when you're going to start with the course again. I'm sure you are
+
+having a wonderful time and I'll see you in the next step.

@@ -1,0 +1,58 @@
+Welcome back. In this step,
+
+let's look at some of the scenarios related to Azure Cloud Service categories. We looked at IaaS, PaaS, SaaS,
+
+and Serverless. Let's look at a few scenarios related to them.
+
+You are deploying custom application in virtual machines.
+
+Which category does it fit into?
+
+Yep, it is Infrastructure as a Service. Using Gmail, Software as a Service.
+
+Using Azure App Service to deploy your application, Platform as a Service. Customer is responsible for
+
+OS updates when using PaaS.
+
+True or false?
+
+The answer is false, because customer is no longer responsible for the operating system when he is using
+
+PaaS.
+
+True or false - Customer is responsible for Availability when using PaaS.
+
+The answer is false.
+
+The cloud provider would take care of the availability requirements.
+
+The customer is only responsible for ensuring that the configuration is right. In PaaS, customer has access
+
+to VM instances.
+
+The answer is false. In PaaS, customer has access to configuration.
+
+He'll not be able to directly access the VM instances.
+
+In PaaS, customer can customize OS and install custom software. Again, false.
+
+In PaaS, customer can configure auto-scaling needs. The answer to this is true. He can configure things,
+
+he can configure hardware as well. So, he can configure hardware needs; memory, CPU, etc.
+
+The answer to this, the answer to this is also true. PaaS services only offer compute services.
+
+Is that true or false?
+
+The answer is false.
+
+Until now, we have looked at compute services, but there are a lot of other services; Databases, Skewing,
+
+Big data, Machine Learning, IoT.
+
+There are a lot of services which are offered by the cloud platforms under the PaaS category.
+
+In this step, we looked at some of the important scenarios related to Azure Cloud Service Categories.
+
+I'm sure you are having a wonderful time and I'll see you in the next step.
+
