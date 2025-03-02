@@ -1,14 +1,14 @@
 import streamlit as st
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
+import glob
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_google_genai import HarmCategory, HarmBlockThreshold
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
-from langchain.document_loaders import DirectoryLoader
-from langchain_google_genai import HarmBlockThreshold, HarmCategory
+from langchain_community.document_loaders import TextLoader
 
 # Load environment variables from .env file
 load_dotenv()
@@ -21,7 +21,7 @@ if "GOOGLE_API_KEY" not in os.environ:
 
 # Configure the Google Generative AI chat model with specified parameters
 chat_model = ChatGoogleGenerativeAI(
-    model="gemini-1.5-pro",  # Specify the model version (can use "gemini-1-ultra" for a different configuration)
+    model="gemini-1.5-pro",  # Specify the model version
     temperature=0.7,  # Control response creativity
     max_tokens=500,  # Limit the number of tokens in the output
     safety_settings={
@@ -30,11 +30,24 @@ chat_model = ChatGoogleGenerativeAI(
     max_retries=2,  # Set maximum retries for handling errors
 )
 
-# Function to load text transcripts from a directory
+# Function to load text transcripts from a directory using TextLoader instead of DirectoryLoader
 def load_transcripts_from_directory(directory_path):
-    loader = DirectoryLoader(directory_path, glob="*.txt")  # Load all .txt files from the specified directory
-    documents = loader.load()  # Read the content of the documents
-    text = "\n".join([doc.page_content for doc in documents])  # Combine content into a single string
+    file_paths = glob.glob(os.path.join(directory_path, "*.txt"))
+    documents = []
+    
+    for file_path in file_paths:
+        try:
+            loader = TextLoader(file_path)
+            documents.extend(loader.load())
+            print(f"Successfully loaded: {file_path}")
+        except Exception as e:
+            print(f"Error loading file {file_path}")
+            print(f"  Error details: {str(e)}")
+    
+    if not documents:
+        return ""
+        
+    text = "\n".join([doc.page_content for doc in documents])
     return text
 
 # Function to split large text into smaller chunks for efficient processing
@@ -110,7 +123,7 @@ def main():
     st.set_page_config("Chat Transcripts", layout="wide")  # Configure the Streamlit page
     st.header("in28minutes Q&A ChatBot💁")  # Display the header
 
-    transcript_dir = "/home/ashraf/Desktop/GEMINI/Transcripts"  # Directory containing the transcript files
+    transcript_dir = "Transcripts"  # Directory containing the transcript files
 
     # Process and index the transcript files
     with st.spinner("Processing documents..."):
@@ -118,13 +131,14 @@ def main():
             raw_text = load_transcripts_from_directory(transcript_dir)  # Load transcripts
             if raw_text.strip() == "":
                 st.error("Transcripts are blank! Provide a different dir or review file content formatting in existing files if meant to be full!")
-            text_chunks = get_text_chunks(raw_text)  # Split transcripts into chunks
-            get_vector_store(text_chunks)  # Create and save vector store
-            st.success("Transcripts Processed Successfully!")
+            else:
+                text_chunks = get_text_chunks(raw_text)  # Split transcripts into chunks
+                get_vector_store(text_chunks)  # Create and save vector store
+                st.success("Transcripts Processed Successfully!")
         except FileNotFoundError:
             st.error(f"Directory not found: {transcript_dir}. Check path validity.")
         except Exception as e:
-            st.error(f"A different problem was encountered loading/processing transcripts:{e}")
+            st.error(f"A different problem was encountered loading/processing transcripts: {e}")
 
     # Accept user queries and respond based on the processed transcripts
     user_question = st.text_input("Ask a Question from the Transcripts")
